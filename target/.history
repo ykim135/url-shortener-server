@@ -37,3 +37,11 @@ compile
 test
 compile
 test
+compile
+testOnly irobo.api.service.UrlServiceTest
+compile
+testOnly irobo.api.service.UrlServiceTest
+ga
+compile
+testOnly irobo.api.service.UrlServiceTest
+compile

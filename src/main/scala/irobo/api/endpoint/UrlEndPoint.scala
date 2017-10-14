@@ -19,12 +19,13 @@ import irobo.api.model._
 import irobo.api.JsonDecoder._
 import irobo.api.JsonEncoder._
 
+import scala.util.matching.Regex
 import scala.concurrent.Future
 
 import cats.syntax.either._
 
 class UrlEndPoint(urlService: UrlService)(implicit executionContext: ExecutionContext) {
-  def getShortUrl(): Endpoint[String] = {
+  def getShortUrl(): Endpoint[ShortUrl] = {
     post(
       "api"   :: 
       "short" :: 
@@ -34,21 +35,25 @@ class UrlEndPoint(urlService: UrlService)(implicit executionContext: ExecutionCo
 
 			val fullUrl: Option[String] = doc.hcursor.get[String]("full_url").toOption
 
+			val pattern: Regex = """^((https?|ftp|smtp):\/\/)?(www.)?[a-z0-9]+\.[a-z]+(\/[a-zA-Z0-9#]+\/?)*$""".r
+
+			val validatedUrl = fullUrl.flatMap { url => pattern.findFirstIn(url) }
+
       val output = 
-        fullUrl match {
+        validatedUrl match {
           case Some(fullUrl) =>
             urlService.getShortUrl(fullUrl).map { shortUrl =>
-              Ok(shortUrl.getOrElse("")).withHeader("Access-Control-Allow-Origin" -> "*")
+              Ok(ShortUrl("2000", "Success", shortUrl)).withHeader("Access-Control-Allow-Origin" -> "*")
             }
           case None =>
-            Future.successful(Ok("").withHeader("Access-Control-Allow-Origin" -> "*"))
+            Future.successful(Ok(ShortUrl("4000", "Invalid url: please check your url", None)).withHeader("Access-Control-Allow-Origin" -> "*"))
         }
 
       output.asTwitter
     }
   }
 
-  def getFullUrl(): Endpoint[String] = {
+  def getFullUrl(): Endpoint[FullUrl] = {
     post(
       "api"  :: 
       "full" :: 
@@ -62,10 +67,10 @@ class UrlEndPoint(urlService: UrlService)(implicit executionContext: ExecutionCo
         shortUrl match {
           case Some(shortUrl) =>
             urlService.getFullUrl(shortUrl).map { fullUrl =>
-              Ok(fullUrl.getOrElse("")).withHeader("Access-Control-Allow-Origin" -> "*")
+              Ok(FullUrl("2000", "Success", fullUrl)).withHeader("Access-Control-Allow-Origin" -> "*")
             }
           case None =>
-            Future.successful(Ok("").withHeader("Access-Control-Allow-Origin" -> "*"))
+            Future.successful(Ok(FullUrl("4001", "Cannot interpret shortened url", None)).withHeader("Access-Control-Allow-Origin" -> "*"))
         }
 
       output.asTwitter

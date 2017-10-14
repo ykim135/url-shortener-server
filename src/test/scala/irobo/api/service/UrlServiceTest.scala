@@ -35,6 +35,30 @@ object UrlServiceTest extends TestSuite with Matchers with MockitoSugar {
         })
       }
 
+      "prettify full url" - {
+        val fullUrl = "https://google.com"
+
+        val output = urlService.prettifyFullUrl(fullUrl)
+
+        assert(output == "google.com")
+      }
+
+      "parse short url" - {
+        val url = "my.kr/test"
+
+        val output = urlService.parseShortUrl(url)
+
+        assert(output == "test")
+      }
+
+      "wrap short url" - {
+        val shortUrl = "a"
+
+        val output = urlService.wrapShortUrl(shortUrl)
+
+        assert(output == None)
+      }
+
       "get hashed full url" - {
         val output = urlService.getFullUrlHash("test")
 
@@ -55,9 +79,13 @@ object UrlServiceTest extends TestSuite with Matchers with MockitoSugar {
 
       "get short url" - {
         for {
+          _       <- truncate()
           output1 <- urlService.getShortUrl("www.naver.com")
           output2 <- urlService.getShortUrl("www.naver.com")
         } yield {
+          println(output1)
+          println(output2)
+
           assert(output1 == output2)
         }
       }

@@ -5,6 +5,7 @@ import irobo.api.model._
 import irobo.api.model.dao._
 import irobo.api.service._
 import irobo.common.Logger
+
 import scala.concurrent.{ Future, ExecutionContext }
 
 import com.twitter.finagle._
@@ -13,13 +14,18 @@ import com.twitter.finagle.http._
 import java.security.MessageDigest
 
 class UrlService(urlDao: UrlDao)(implicit ec : ExecutionContext) extends Logger {
-	val charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+	private val charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
   
-  def wrapShortUrl(shortUrl: String) = 
-    s"my.kr/$shortUrl"
+	private[service] def prettifyFullUrl(fullUrl: String) = 
+		fullUrl
+      .replace("www.", "")
+      .replace("https://", "")
+      .replace("http://", "")
+		
+  private[service] def wrapShortUrl(shortUrl: String) = s"my.kr/$shortUrl"
 
-  def parseShortUrl(url: String) = 
-    url.split("my.kr/").tail
+	// gets the last bit of url which is the key to full url value
+  private[service] def parseShortUrl(url: String): String = url.split("my.kr/").last
 
 	// hash full url in MD5
 	private[service] def getFullUrlHash(fullUrl: String): String = 
@@ -44,13 +50,13 @@ class UrlService(urlDao: UrlDao)(implicit ec : ExecutionContext) extends Logger 
 		urlDao.insertUrl(urlValue)
 	}
   
-  def toBase10(str: String): Int = {
+  private[service] def toBase10(str: String): Int = {
     val digits = str.map { eachChar => charset.indexOf(eachChar) }.reverse
 
     digits.map { digit => digit * scala.math.pow (62, digits.indexOf(digit)) }.sum.toInt
   }
 
-  def toBase62(num: Option[Long]): Option[String] = {
+  private[service] def toBase62(num: Option[Long]): Option[String] = {
     @scala.annotation.tailrec 
     def loop(
       num    : Long,
@@ -79,28 +85,31 @@ class UrlService(urlDao: UrlDao)(implicit ec : ExecutionContext) extends Logger 
 	// 1. get the full url and its hash value
 	// 2. see if the hash value exists in the database. 
 	// 3. if anything is there, return the corresponding short_url
-	// 4. else, insert the full url and its hash value. then, get the newly inserted id.
+	// 4. else, insert the full url and its hash value. then, get the newly inserted id. make sure full url is in the format www.test.co.kr
 	// convert it to base64 to get the short url. Insert the short url into DB. 
 	def getShortUrl(fullUrl: String): Future[Option[String]] = {
-    val fullUrlHash = getFullUrlHash(fullUrl)
+		val prettyFullUrl = prettifyFullUrl(fullUrl)
+		val fullUrlHash   = getFullUrlHash(prettyFullUrl)
 
     urlDao.getUrl(fullUrlHash).flatMap { urlRow =>
       if (urlRow.isDefined) 
-        Future.successful(urlRow.flatMap(_.shortUrl))
+        Future.successful(urlRow.flatMap(_.shortUrl).map(wrapShortUrl))
       else {
         for {
-          _        <- insertFullUrlHash(fullUrl, fullUrlHash)
+          _        <- insertFullUrlHash(prettyFullUrl, fullUrlHash)
           url      <- urlDao.getUrl(fullUrlHash)
           id        = url.flatMap(_.id)
           shortUrl  = toBase62(id)
           _        <- urlDao.updateShortUrl(id, shortUrl)
-        } yield shortUrl
+        } yield {
+					shortUrl.map(wrapShortUrl)
+				}
       }
     }
 	}
 
   def getFullUrl(shortUrl: String): Future[Option[String]] = {
-    val id = toBase10(shortUrl) 
+    val id = toBase10(parseShortUrl(shortUrl))
 
     urlDao.getUrlById(id).map { urlOpt => urlOpt.map(_.fullUrl) }
   }
