@@ -38,9 +38,6 @@ object Server extends App with Logger {
   val config = ConfigFactory.load()
   val port   = config.getInt("port")
 
-  val authUrl     = config.getString("authUrl")
-  val authPort    = config.getInt("authPort")
-
   val pool = {
     val mySqlConfig = config.getConfig("mySqlConfig")
     val dbUserName  = mySqlConfig.getString("username")
