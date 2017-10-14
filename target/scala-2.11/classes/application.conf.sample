@@ -1,14 +1,7 @@
 port              = 8080
-accessTokenExpiry = 157784760
 mySqlConfig       = {
   username = "root"
   host     = "localhost"
   password = ""
   database = "irobo"
 }
-
-kmsKeyId = "alias/trader-key"
-publicKey = ""
-encryptedPrivate = ""
-
-recipients = ""
