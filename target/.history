@@ -1,0 +1,38 @@
+compile
+test
+compile
+testOnly irobo.api.dao.AccountDaoTest
+compile
+sbt clean
+clean
+compile
+clean
+compile
+testOnly irobo.api.dao.UrlDaoTest
+clean
+testOnly irobo.api.dao.UrlDaoTest
+clean
+compile
+clean
+compile
+testOnly irobo.api.dao.UrlDaoTest
+compile
+testOnly irobo.api.service.UrlServiceTest
+compile
+testOnly irobo.api.dao.UrlDaoTest
+testOnly irobo.api.dao.UrlServiceTest
+testOnly irobo.api.service.UrlServiceTest
+compile
+testOnly irobo.api.dao.UrlDaoTest
+compile
+testOnly irobo.api.service.UrlServiceTest
+compile
+testOnly irobo.api.service.UrlServiceTest
+compile
+testOnly irobo.api.dao.UrlDaoTest
+testOnly irobo.api.service.UrlServiceTest
+compile
+test
+compile
+test
+compile

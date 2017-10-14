@@ -1,0 +1,4 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/Users/yoonungkim/workspace/irobo/url-shortener/src/main/resources/application.conf,/Users/yoonungkim/workspace/irobo/url-shortener/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/yoonungkim/workspace/irobo/url-shortener/src/main/resources/application.conf.sample,/Users/yoonungkim/workspace/irobo/url-shortener/target/scala-2.11/classes/application.conf.sample)[0m
+[0m[[0mdebug[0m] [0m	(/Users/yoonungkim/workspace/irobo/url-shortener/src/main/resources/logback.xml.sample,/Users/yoonungkim/workspace/irobo/url-shortener/target/scala-2.11/classes/logback.xml.sample)[0m

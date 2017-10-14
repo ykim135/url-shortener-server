@@ -1,0 +1,62 @@
+<configuration debug="no" scan="true" scanPeriod="10 seconds">
+    <appender name="FILE-INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/irobo-trader-info.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/irobo-trader-info.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%4p - [%d{ISO8601}] %c{1}: %m%n%ex{short}</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE-ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/irobo-trader-error.log</file>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>WARN</level>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/irobo-trader-error.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>14</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%4p - [%d{ISO8601}] %c{1}: %m%n%xEx{full}</pattern>
+        </encoder>
+    </appender>
+
+    <!--<appender name="email" class="ch.qos.logback.classic.net.SMTPAppender">-->
+        <!--<SMTPHost>smtp.gmail.com</SMTPHost>-->
+        <!--<SMTPPort>465</SMTPPort>-->
+        <!--<SSL>true</SSL>-->
+        <!--<username>dev-services@tapad.com</username>-->
+        <!--<password>T@P@d123</password>-->
+
+        <!--<to>eunwoo.song@getkoriny.co</to>-->
+        <!--<from>eunwoo.song@getkoriny.co</from>-->
+        <!--<subject>${HOSTNAME}: Critical problem in API backend</subject>-->
+        <!--<layout class="ch.qos.logback.classic.html.HTMLLayout"/>-->
+    <!--</appender>-->
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%4p - [%d{ISO8601}] %c{1}: %m%n%ex{short}</pattern>
+        </encoder>
+    </appender>
+
+    <!--logger name="com.tapad.support.ostrich" level="DEBUG"/-->
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE-ERROR"/>
+        <appender-ref ref="FILE-INFO"/>
+    </root>
+
+    <logger name="critical" level="DEBUG" additivity="false">
+        <!--<appender-ref ref="email"/>-->
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE-ERROR"/>
+        <appender-ref ref="FILE-INFO"/>
+    </logger>
+</configuration>

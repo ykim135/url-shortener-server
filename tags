@@ -1,0 +1,728 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Account	src/main/scala/irobo/api/model/Account.scala	/^case class Account ($/;"	c
+AccountAddRequest	src/main/scala/irobo/api/model/AccountAddRequest.scala	/^case class AccountAddRequest($/;"	c
+AccountDao	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^class AccountDao(connection: Connection)(implicit ec: ExecutionContext) extends RowDao[Account] with Logger {$/;"	c
+AccountDaoTest	src/test/scala/irobo/api/model/dao/AccountDaoTest.scala	/^object AccountDaoTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+AccountEndPoint	src/main/scala/irobo/api/endpoint/AccountEndPoint.scala	/^class AccountEndPoint($/;"	c
+AccountService	src/main/scala/irobo/api/service/AccountService.scala	/^class AccountService($/;"	c
+AccountServiceTest	src/test/scala/irobo/api/service/AccountServiceTest.scala	/^object AccountServiceTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+AccountSpecs	src/main/scala/irobo/api/model/AccountSpecs.scala	/^case class AccountSpecs ($/;"	c
+AccountSpecsEndPoint	src/main/scala/irobo/api/endpoint/AccountSpecsEndPoint.scala	/^class AccountSpecsEndPoint($/;"	c
+AccountSpecsResponse	src/main/scala/irobo/api/model/CustomerResponse.scala	/^case class AccountSpecsResponse ($/;"	c
+AccountSpecsService	src/main/scala/irobo/api/service/AccountSpecsService.scala	/^class AccountSpecsService($/;"	c
+Asset	src/main/scala/irobo/api/model/Asset.scala	/^case class Asset ($/;"	c
+AssetDao	src/main/scala/irobo/api/model/dao/AssetDao.scala	/^class AssetDao(connection : Connection)(implicit ec: ExecutionContext) extends RowDao[Asset] with Logger {$/;"	c
+AssetDaoTest	src/test/scala/irobo/api/model/dao/AssetDaoTest.scala	/^object AssetDaoTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+AssetEndPoint	src/main/scala/irobo/api/endpoint/AssetEndPoint.scala	/^class AssetEndPoint($/;"	c
+AssetService	src/main/scala/irobo/api/service/AssetService.scala	/^class AssetService(assetDao: AssetDao)(implicit ec : ExecutionContext) extends Logger {$/;"	c
+AssetServiceTest	src/test/scala/irobo/api/service/AssetServiceTest.scala	/^object AssetServiceTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+AuthService	src/main/scala/irobo/api/service/AuthService.scala	/^class AuthService(httpInvoker: HttpInvoker)(implicit ec : ExecutionContext) extends Logger {$/;"	c
+Branch	src/main/scala/irobo/api/model/Branch.scala	/^case class Branch ($/;"	c
+CORSHandler	src/main/scala/irobo/api/Server.scala	/^  val CORSHandler: Endpoint[Unit] = options(*) {$/;"	l
+Commission	src/main/scala/irobo/api/model/Commission.scala	/^case class Commission ($/;"	c
+CommissionDao	src/main/scala/irobo/api/model/dao/CommissionDao.scala	/^class CommissionDao(connection : Connection)(implicit ec: ExecutionContext) extends RowDao[Commission] with Logger {$/;"	c
+CommissionDaoTest	src/test/scala/irobo/api/model/dao/CommissionDaoTest.scala	/^object CommissionDaoTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+CommissionService	src/main/scala/irobo/api/service/CommissionService.scala	/^class CommissionService(commissionDao: CommissionDao)(implicit ec : ExecutionContext) {$/;"	c
+CommissionServiceTest	src/test/scala/irobo/api/service/CommissionServiceTest.scala	/^object CommissionServiceTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+Company	src/main/scala/irobo/api/model/Company.scala	/^case class Company ($/;"	c
+CompanyDao	src/main/scala/irobo/api/model/dao/CompanyDao.scala	/^class CompanyDao(connection: Connection)(implicit ec: ExecutionContext) extends RowDao[Company] with Logger {$/;"	c
+CompanyEndPoint	src/main/scala/irobo/api/endpoint/CompanyEndPoint.scala	/^class CompanyEndPoint($/;"	c
+CompanyResponse	src/main/scala/irobo/api/model/CompanyResponse.scala	/^case class CompanyResponse ($/;"	c
+CompanyService	src/main/scala/irobo/api/service/CompanyService.scala	/^class CompanyService(companyDao: CompanyDao)(implicit ec : ExecutionContext) {$/;"	c
+CryptoDao	src/main/scala/irobo/api/model/dao/CryptoDao.scala	/^class CryptoDao(pool: Connection)(implicit ec: ExecutionContext) extends Logger {$/;"	c
+CryptoDaoTest	src/test/scala/irobo/api/model/dao/CryptoDaoTest.scala	/^object CryptoDaoTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+CryptoService	src/main/scala/irobo/api/service/CryptoService.scala	/^class CryptoService($/;"	c
+Customer	src/main/scala/irobo/api/model/Customer.scala	/^case class Customer ($/;"	c
+CustomerAccountResponse	src/main/scala/irobo/api/model/CustomerResponse.scala	/^case class CustomerAccountResponse($/;"	c
+CustomerAdd	src/main/scala/irobo/api/model/Customer.scala	/^case class CustomerAdd($/;"	c
+CustomerAssetResponse	src/main/scala/irobo/api/model/CustomerResponse.scala	/^case class CustomerAssetResponse($/;"	c
+CustomerDao	src/main/scala/irobo/api/model/dao/CustomerDao.scala	/^class CustomerDao(connection : Connection)(implicit ec: ExecutionContext) extends RowDao[Customer] with Logger {$/;"	c
+CustomerDaoTest	src/test/scala/irobo/api/model/dao/CustomerDaoTest.scala	/^object CustomerDaoTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+CustomerEndPoint	src/main/scala/irobo/api/endpoint/CustomerEndPoint.scala	/^class CustomerEndPoint($/;"	c
+CustomerInfoResponse	src/main/scala/irobo/api/model/CustomerResponse.scala	/^case class CustomerInfoResponse ($/;"	c
+CustomerResponse	src/main/scala/irobo/api/model/CustomerResponse.scala	/^trait CustomerResponse {$/;"	t
+CustomerSectorResponse	src/main/scala/irobo/api/model/CustomerResponse.scala	/^case class CustomerSectorResponse($/;"	c
+CustomerService	src/main/scala/irobo/api/service/CustomerService.scala	/^class CustomerService($/;"	c
+CustomerServiceTest	src/test/scala/irobo/api/service/CustomerServiceTest.scala	/^object CustomerServiceTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+CustomerTerminatedResponse	src/main/scala/irobo/api/model/CustomerResponse.scala	/^case class CustomerTerminatedResponse($/;"	c
+CustomerYieldResponse	src/main/scala/irobo/api/model/CustomerResponse.scala	/^case class CustomerYieldResponse($/;"	c
+DataKey	src/main/scala/irobo/api/model/DataKey.scala	/^case class DataKey($/;"	c
+DataKeyDao	src/main/scala/irobo/api/model/dao/DataKeyDao.scala	/^class DataKeyDao(connection: Connection)(implicit ec: ExecutionContext) extends RowDao[DataKey] {$/;"	c
+Date	src/main/scala/irobo/api/model/Date.scala	/^case class Date ($/;"	c
+DateDao	src/main/scala/irobo/api/model/dao/DateDao.scala	/^class DateDao(pool: Connection)(implicit ec: ExecutionContext) extends RowDao[Date] with Logger {$/;"	c
+DateDaoTest	src/test/scala/irobo/api/model/dao/DateDaoTest.scala	/^object DateDaoTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+DateService	src/main/scala/irobo/api/service/DateService.scala	/^class DateService(dateDao: DateDao)(implicit ec : ExecutionContext) {$/;"	c
+DateServiceTest	src/test/scala/irobo/api/service/DateServiceTest.scala	/^object DateServiceTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+DecodeAccountAddRequest	src/main/scala/irobo/api/JsonDecoder.scala	/^  implicit val DecodeAccountAddRequest: Decoder[AccountAddRequest] = new Decoder[AccountAddRequest] {$/;"	l
+DecodeTokenRequest	src/main/scala/irobo/api/JsonDecoder.scala	/^  implicit val DecodeTokenRequest: Decoder[VerifyTokenResponse] = new Decoder[VerifyTokenResponse] {$/;"	l
+Deposit	src/main/scala/irobo/api/model/Deposit.scala	/^case class Deposit ($/;"	c
+DnsResolvingCluster	src/main/scala/irobo/api/service/HttpInvoker.scala	/^class DnsResolvingCluster(host: String, port: Int, dnsTtlMillis: Long = 5 * 60 * 1000) extends Cluster[SocketAddress] with Logger {$/;"	c
+DnsResolvingCluster	src/main/scala/irobo/api/service/HttpInvoker.scala	/^object DnsResolvingCluster extends Logger {$/;"	c
+DnsTtl	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  val DnsTtl = 1000 * 60 * 5$/;"	l
+EncodeAccount	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeAccount: Encoder[Account] = new Encoder[Account] {$/;"	l
+EncodeAccountSpecs	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeAccountSpecs: Encoder[AccountSpecs] = new Encoder[AccountSpecs] {$/;"	l
+EncodeAccountSpecsResponse	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeAccountSpecsResponse: Encoder[AccountSpecsResponse] = new Encoder[AccountSpecsResponse] {$/;"	l
+EncodeAsset	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeAsset: Encoder[Asset] = new Encoder[Asset] {$/;"	l
+EncodeCommission	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeCommission: Encoder[Commission] = new Encoder[Commission] {$/;"	l
+EncodeCompany	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeCompany : Encoder[Company] = new Encoder[Company] {$/;"	l
+EncodeCompanyResponse	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeCompanyResponse: Encoder[CompanyResponse] = new Encoder[CompanyResponse] {$/;"	l
+EncodeCustomer	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeCustomer: Encoder[Customer] = new Encoder[Customer] {$/;"	l
+EncodeCustomerAccountResponse	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeCustomerAccountResponse: Encoder[CustomerAccountResponse] = new Encoder[CustomerAccountResponse] {$/;"	l
+EncodeCustomerAssetResponse	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeCustomerAssetResponse: Encoder[CustomerAssetResponse] = new Encoder[CustomerAssetResponse] {$/;"	l
+EncodeCustomerInfoResponse	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeCustomerInfoResponse: Encoder[CustomerInfoResponse] = new Encoder[CustomerInfoResponse] {$/;"	l
+EncodeCustomerSectorResponse	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeCustomerSectorResponse: Encoder[CustomerSectorResponse] = new Encoder[CustomerSectorResponse] {$/;"	l
+EncodeCustomerTerminatedResponse	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeCustomerTerminatedResponse: Encoder[CustomerTerminatedResponse] = new Encoder[CustomerTerminatedResponse] {$/;"	l
+EncodeCustomerYieldResponse	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeCustomerYieldResponse: Encoder[CustomerYieldResponse] = new Encoder[CustomerYieldResponse] {$/;"	l
+EncodeEvaluation	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeEvaluation: Encoder[Evaluation] = new Encoder[Evaluation] {$/;"	l
+EncodeEvaluationResponse	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeEvaluationResponse: Encoder[EvaluationResponse] = new Encoder[EvaluationResponse] {$/;"	l
+EncodeIO	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeIO: Encoder[IO] = new Encoder[IO] {$/;"	l
+EncodeKospi	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeKospi: Encoder[Kospi] = new Encoder[Kospi] {$/;"	l
+EncodeResultResponse	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeResultResponse: Encoder[ResultResponse] = new Encoder[ResultResponse] {$/;"	l
+EncodeSector	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeSector: Encoder[Sector] = new Encoder[Sector] {$/;"	l
+EncodeTerminated	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeTerminated: Encoder[Terminated] = new Encoder[Terminated] {$/;"	l
+EncodeYield	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeYield: Encoder[Yield] = new Encoder[Yield] {$/;"	l
+Evaluation	src/main/scala/irobo/api/model/Evaluation.scala	/^case class Evaluation ($/;"	c
+EvaluationDao	src/main/scala/irobo/api/model/dao/EvaluationDao.scala	/^class EvaluationDao(connection : Connection)(implicit ec: ExecutionContext) extends RowDao[Evaluation] with Logger {$/;"	c
+EvaluationDaoTest	src/test/scala/irobo/api/model/dao/EvaluationDaoTest.scala	/^object EvaluationDaoTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+EvaluationEndPoint	src/main/scala/irobo/api/endpoint/EvaluationEndPoint.scala	/^class EvaluationEndPoint($/;"	c
+EvaluationResponse	src/main/scala/irobo/api/model/CustomerResponse.scala	/^case class EvaluationResponse($/;"	c
+EvaluationService	src/main/scala/irobo/api/service/EvaluationService.scala	/^class EvaluationService(evaluationDao: EvaluationDao)(implicit ec : ExecutionContext) extends Logger {$/;"	c
+EvaluationServiceTest	src/test/scala/irobo/api/service/EvaluationServiceTest.scala	/^object EvaluationServiceTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+Format	src/main/scala/irobo/api/Format.scala	/^object Format {$/;"	c
+Fund	src/main/scala/irobo/api/model/Fund.scala	/^case class Fund ($/;"	c
+FutureConvert	src/main/scala/irobo/api/service/FutureConvert.scala	/^object FutureConvert {$/;"	c
+HostToResolve	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  class HostToResolve(val host: String, val port: Int, var current: Seq[SocketAddress], val outgoing: SpoolSource[Change[SocketAddress]])$/;"	c
+HttpInvoker	src/main/scala/irobo/api/service/HttpInvoker.scala	/^class HttpInvoker private ($/;"	c
+HttpInvoker	src/main/scala/irobo/api/service/HttpInvoker.scala	/^object HttpInvoker {$/;"	c
+IO	src/main/scala/irobo/api/model/IO.scala	/^case class IO ($/;"	c
+IODao	src/main/scala/irobo/api/model/dao/IODao.scala	/^class IODao(pool: Connection)(implicit ec: ExecutionContext) extends RowDao[IO] with Logger {$/;"	c
+IODaoTest	src/test/scala/irobo/api/model/dao/IODaoTest.scala	/^object IODaoTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+IOService	src/main/scala/irobo/api/service/IOService.scala	/^class IOService(ioDao: IODao)(implicit ec : ExecutionContext) {$/;"	c
+IOServiceTest	src/test/scala/irobo/api/service/IOServiceTest.scala	/^object IOServiceTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+JsonDecoder	src/main/scala/irobo/api/JsonDecoder.scala	/^object JsonDecoder {$/;"	c
+JsonEncoder	src/main/scala/irobo/api/JsonEncoder.scala	/^object JsonEncoder {$/;"	c
+Kospi	src/main/scala/irobo/api/model/Kospi.scala	/^case class Kospi ($/;"	c
+KospiDao	src/main/scala/irobo/api/model/dao/KospiDao.scala	/^class KospiDao(connection : Connection)(implicit ec: ExecutionContext) extends RowDao[Kospi] with Logger {$/;"	c
+KospiDaoTest	src/test/scala/irobo/api/model/dao/KospiDaoTest.scala	/^object KospiDaoTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+Logger	src/main/scala/irobo/api/Logger.scala	/^object Logger extends Logger {$/;"	c
+Logger	src/main/scala/irobo/api/Logger.scala	/^trait Logger {$/;"	t
+OrderEndPointTest	src/test/scala/irobo/api/endpoint/OrderEndPointTest.scala	/^class OrderEndPointTest extends FlatSpec with Matchers {$/;"	c
+Result	src/main/scala/irobo/api/model/Result.scala	/^case class Result(result: String = "4000")$/;"	c
+ResultResponse	src/main/scala/irobo/api/model/CustomerResponse.scala	/^case class ResultResponse ($/;"	c
+RichSFuture	src/main/scala/irobo/api/endpoint/Package.scala	/^  implicit class RichSFuture[A](val f: SFuture[A]) extends AnyVal {$/;"	c
+RichSFuture	src/main/scala/irobo/api/service/FutureConvert.scala	/^  implicit class RichSFuture[A](val f: SFuture[A]) extends AnyVal {$/;"	c
+RichTFuture	src/main/scala/irobo/api/endpoint/Package.scala	/^  implicit class RichTFuture[A](val f: TFuture[A]) extends AnyVal {$/;"	c
+RichTFuture	src/main/scala/irobo/api/service/FutureConvert.scala	/^  implicit class RichTFuture[A](val f: TFuture[A]) extends AnyVal {$/;"	c
+RowDao	src/main/scala/irobo/api/model/dao/RowDao.scala	/^trait RowDao[T] extends Logger {$/;"	t
+Sector	src/main/scala/irobo/api/model/Sector.scala	/^case class Sector ($/;"	c
+SectorDao	src/main/scala/irobo/api/model/dao/SectorDao.scala	/^class SectorDao(connection : Connection)(implicit ec: ExecutionContext) extends RowDao[Sector] with Logger {$/;"	c
+SectorDaoTest	src/test/scala/irobo/api/model/dao/SectorDaoTest.scala	/^object SectorDaoTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+SectorEndPoint	src/main/scala/irobo/api/endpoint/SectorEndPoint.scala	/^class SectorEndPoint($/;"	c
+SectorService	src/main/scala/irobo/api/service/SectorService.scala	/^class SectorService(sectorDao: SectorDao)(implicit ec : ExecutionContext) extends Logger {$/;"	c
+SectorServiceTest	src/test/scala/irobo/api/service/SectorServiceTest.scala	/^object SectorServiceTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+Server	src/main/scala/irobo/api/Server.scala	/^object Server extends App with Logger {$/;"	c
+Terminated	src/main/scala/irobo/api/model/Terminated.scala	/^case class Terminated($/;"	c
+TerminatedDao	src/main/scala/irobo/api/model/dao/TerminatedDao.scala	/^class TerminatedDao(connection: Connection)(implicit ec: ExecutionContext) extends RowDao[Terminated] with Logger {$/;"	c
+TerminatedService	src/main/scala/irobo/api/service/TerminatedService.scala	/^class TerminatedService($/;"	c
+TestDatabase	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^object TestDatabase {$/;"	c
+Url	src/main/scala/irobo/api/model/Url.scala	/^case class Url ($/;"	c
+UrlDao	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^class UrlDao(connection: Connection)(implicit ec: ExecutionContext) extends RowDao[Url] with Logger {$/;"	c
+UrlDaoTest	src/test/scala/irobo/api/model/dao/UrlDaoTest.scala	/^object UrlDaoTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+UrlEndPoint	src/main/scala/irobo/api/endpoint/UrlEndPoint.scala	/^class UrlEndPoint(urlService: UrlService)(implicit executionContext: ExecutionContext) {$/;"	c
+UrlService	src/main/scala/irobo/api/service/UrlService.scala	/^class UrlService(urlDao: UrlDao)(implicit ec : ExecutionContext) extends Logger {$/;"	c
+UrlServiceTest	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^object UrlServiceTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+VerifyTokenResponse	src/main/scala/irobo/api/model/VerifyTokenResponse.scala	/^case class VerifyTokenResponse ($/;"	c
+Yield	src/main/scala/irobo/api/model/Yield.scala	/^case class Yield ($/;"	c
+YieldDao	src/main/scala/irobo/api/model/dao/YieldDao.scala	/^class YieldDao(connection : Connection)(implicit ec: ExecutionContext) extends RowDao[Yield] with Logger {$/;"	c
+YieldEndPoint	src/main/scala/irobo/api/endpoint/YieldEndPoint.scala	/^class YieldEndPoint($/;"	c
+YieldService	src/main/scala/irobo/api/service/YieldService.scala	/^class YieldService($/;"	c
+_accountID	src/main/scala/irobo/api/model/dao/DateDao.scala	/^		val _accountID = row("account_id") match {$/;"	l
+_pool	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^  val _pool = connection$/;"	l
+_pool	src/main/scala/irobo/api/model/dao/AssetDao.scala	/^  val _pool = connection$/;"	l
+_pool	src/main/scala/irobo/api/model/dao/CommissionDao.scala	/^  val _pool = connection$/;"	l
+_pool	src/main/scala/irobo/api/model/dao/CompanyDao.scala	/^  val _pool = connection$/;"	l
+_pool	src/main/scala/irobo/api/model/dao/CustomerDao.scala	/^  val _pool = connection$/;"	l
+_pool	src/main/scala/irobo/api/model/dao/DataKeyDao.scala	/^  val _pool = connection$/;"	l
+_pool	src/main/scala/irobo/api/model/dao/DateDao.scala	/^  val _pool = pool$/;"	l
+_pool	src/main/scala/irobo/api/model/dao/EvaluationDao.scala	/^  val _pool = connection$/;"	l
+_pool	src/main/scala/irobo/api/model/dao/IODao.scala	/^  val _pool = pool$/;"	l
+_pool	src/main/scala/irobo/api/model/dao/KospiDao.scala	/^  val _pool = connection$/;"	l
+_pool	src/main/scala/irobo/api/model/dao/RowDao.scala	/^  def _pool : Connection$/;"	m
+_pool	src/main/scala/irobo/api/model/dao/SectorDao.scala	/^  val _pool = connection$/;"	l
+_pool	src/main/scala/irobo/api/model/dao/TerminatedDao.scala	/^  val _pool = connection$/;"	l
+_pool	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^  val _pool = connection$/;"	l
+_pool	src/main/scala/irobo/api/model/dao/YieldDao.scala	/^  val _pool = connection$/;"	l
+_request	src/main/scala/irobo/api/service/AccountService.scala	/^    val _request = request.copy(customerID = customerID)$/;"	l
+accessTokenExpiry	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^    val accessTokenExpiry = config.getLong("accessTokenExpiry")$/;"	l
+accountDao	src/main/scala/irobo/api/Server.scala	/^  val accountDao    = new AccountDao(pool)$/;"	l
+accountDao	src/test/scala/irobo/api/model/dao/AccountDaoTest.scala	/^      val accountDao  = new AccountDao(pool)$/;"	l
+accountDao	src/test/scala/irobo/api/service/AccountServiceTest.scala	/^      val accountDao       = new AccountDao(pool)$/;"	l
+accountDao	src/test/scala/irobo/api/service/CustomerServiceTest.scala	/^      val accountDao       = new AccountDao(pool)$/;"	l
+accountEndPoint	src/main/scala/irobo/api/Server.scala	/^  val accountEndPoint      = new AccountEndPoint(accountService, terminatedService, authService)$/;"	l
+accountID	src/main/scala/irobo/api/endpoint/AccountSpecsEndPoint.scala	/^			val accountID: Option[String] = doc.hcursor.get[String]("account_id").toOption$/;"	l
+accountID	src/main/scala/irobo/api/endpoint/AssetEndPoint.scala	/^			val accountID: Option[Int]    = doc.hcursor.get[Int]("account_id").toOption$/;"	l
+accountID	src/main/scala/irobo/api/endpoint/EvaluationEndPoint.scala	/^			val accountID: Option[String] = doc.hcursor.get[String]("account_id").toOption$/;"	l
+accountID	src/main/scala/irobo/api/endpoint/SectorEndPoint.scala	/^			val accountID: Option[Int]    = doc.hcursor.get[Int]("account_id").toOption$/;"	l
+accountID	src/main/scala/irobo/api/endpoint/YieldEndPoint.scala	/^			val accountID: Option[Int]     = doc.hcursor.get[Int]("account_id").toOption$/;"	l
+accountID	src/main/scala/irobo/api/model/dao/AssetDao.scala	/^    val accountID = accountIDOpt.get$/;"	l
+accountID	src/main/scala/irobo/api/model/dao/CommissionDao.scala	/^    val accountID = accountIDOpt.get$/;"	l
+accountID	src/main/scala/irobo/api/model/dao/KospiDao.scala	/^    val accountID = accountIDOpt.get$/;"	l
+accountID	src/main/scala/irobo/api/model/dao/SectorDao.scala	/^    val accountID = accountIDOpt.get$/;"	l
+accountID	src/main/scala/irobo/api/model/dao/YieldDao.scala	/^    val accountID = accountIDOpt.get$/;"	l
+accountID	src/test/scala/irobo/api/service/AssetServiceTest.scala	/^        val accountID = Some(1)$/;"	l
+accountID	src/test/scala/irobo/api/service/AssetServiceTest.scala	/^        val accountID = Some(20)$/;"	l
+accountID	src/test/scala/irobo/api/service/DateServiceTest.scala	/^        val accountID = Some(1)$/;"	l
+accountID	src/test/scala/irobo/api/service/DateServiceTest.scala	/^        val accountID = Some(20)$/;"	l
+accountID	src/test/scala/irobo/api/service/EvaluationServiceTest.scala	/^        val accountID = Some(1)$/;"	l
+accountID	src/test/scala/irobo/api/service/EvaluationServiceTest.scala	/^        val accountID = Some(100)$/;"	l
+accountID	src/test/scala/irobo/api/service/IOServiceTest.scala	/^				val accountID = Some(100)$/;"	l
+accountID	src/test/scala/irobo/api/service/IOServiceTest.scala	/^        val accountID = Some(1)$/;"	l
+accountID	src/test/scala/irobo/api/service/SectorServiceTest.scala	/^        val accountID = Some(1)$/;"	l
+accountNumber	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^    val accountNumber = accountAddRequest.accountNumber$/;"	l
+accountService	src/main/scala/irobo/api/Server.scala	/^  val accountService      = new AccountService(cryptoService, accountDao, customerDao)$/;"	l
+accountService	src/test/scala/irobo/api/service/AccountServiceTest.scala	/^      val accountService   = new AccountService(cryptoService, accountDao, customerDao)$/;"	l
+accountSpecs	src/main/scala/irobo/api/service/AccountSpecsService.scala	/^						val accountSpecs = AccountSpecs ($/;"	l
+accountSpecsEndPoint	src/main/scala/irobo/api/Server.scala	/^  val accountSpecsEndPoint = new AccountSpecsEndPoint(accountSpecsService, authService)$/;"	l
+accountSpecsService	src/main/scala/irobo/api/Server.scala	/^  val accountSpecsService = new AccountSpecsService($/;"	l
+accountYield	src/main/scala/irobo/api/service/YieldService.scala	/^            val accountYield = yields.map { yieldOutput =>$/;"	l
+addAccount	src/main/scala/irobo/api/endpoint/AccountEndPoint.scala	/^  def addAccount: Endpoint[ResultResponse] = $/;"	m
+addAccount	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^  def addAccount(accountAdd : AccountAddRequest): Future[Map[String, Long]] = {$/;"	m
+addAccount	src/main/scala/irobo/api/service/AccountService.scala	/^	def addAccount($/;"	m
+addResolver	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  def addResolver(host: String, port: Int, outgoing: SpoolSource[Change[SocketAddress]]): Seq[SocketAddress] = {$/;"	m
+added	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val added = updated.filter(!h.current.contains(_))$/;"	l
+apply	src/main/scala/irobo/api/JsonDecoder.scala	/^    final def apply(c: HCursor): Decoder.Result[AccountAddRequest] = $/;"	m
+apply	src/main/scala/irobo/api/JsonDecoder.scala	/^    final def apply(c: HCursor): Decoder.Result[VerifyTokenResponse] = $/;"	m
+apply	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  def apply($/;"	m
+asScala	src/main/scala/irobo/api/endpoint/Package.scala	/^    def asScala(implicit e: ExecutionContext): SFuture[A] = {$/;"	m
+asScala	src/main/scala/irobo/api/service/FutureConvert.scala	/^    def asScala(implicit e: ExecutionContext): SFuture[A] = {$/;"	m
+asTwitter	src/main/scala/irobo/api/endpoint/Package.scala	/^    def asTwitter(implicit e: ExecutionContext): TFuture[A] = {$/;"	m
+asTwitter	src/main/scala/irobo/api/service/FutureConvert.scala	/^    def asTwitter(implicit e: ExecutionContext): TFuture[A] = {$/;"	m
+assetDao	src/main/scala/irobo/api/Server.scala	/^  val assetDao      = new AssetDao(pool)$/;"	l
+assetDao	src/test/scala/irobo/api/model/dao/AssetDaoTest.scala	/^      val assetDao = new AssetDao(pool)$/;"	l
+assetDao	src/test/scala/irobo/api/service/AssetServiceTest.scala	/^      val assetDao     = new AssetDao(pool)$/;"	l
+assetEndPoint	src/main/scala/irobo/api/Server.scala	/^  val assetEndPoint        = new AssetEndPoint(assetService, authService)$/;"	l
+assetService	src/main/scala/irobo/api/Server.scala	/^  val assetService        = new AssetService(assetDao)$/;"	l
+assetService	src/test/scala/irobo/api/service/AssetServiceTest.scala	/^      val assetService = new AssetService(assetDao)$/;"	l
+authPort	src/main/scala/irobo/api/Server.scala	/^  val authPort    = config.getInt("authPort")$/;"	l
+authService	src/main/scala/irobo/api/Server.scala	/^  val authService         = new AuthService(httpInvoker)$/;"	l
+authToken	src/main/scala/irobo/api/endpoint/AccountEndPoint.scala	/^			val authToken: Option[String] = doc.hcursor.get[String]("auth_token").toOption$/;"	l
+authToken	src/main/scala/irobo/api/endpoint/AccountSpecsEndPoint.scala	/^			val authToken: Option[String] = doc.hcursor.get[String]("auth_token").toOption$/;"	l
+authToken	src/main/scala/irobo/api/endpoint/AssetEndPoint.scala	/^			val authToken: Option[String] = doc.hcursor.get[String]("auth_token").toOption$/;"	l
+authToken	src/main/scala/irobo/api/endpoint/CustomerEndPoint.scala	/^			val authToken: Option[String]   = doc.hcursor.get[String]("auth_token").toOption$/;"	l
+authToken	src/main/scala/irobo/api/endpoint/CustomerEndPoint.scala	/^			val authToken: Option[String] = doc.hcursor.get[String]("auth_token").toOption$/;"	l
+authToken	src/main/scala/irobo/api/endpoint/EvaluationEndPoint.scala	/^			val authToken: Option[String] = doc.hcursor.get[String]("auth_token").toOption$/;"	l
+authToken	src/main/scala/irobo/api/endpoint/SectorEndPoint.scala	/^			val authToken: Option[String] = doc.hcursor.get[String]("auth_token").toOption$/;"	l
+authToken	src/main/scala/irobo/api/endpoint/UrlEndPoint.scala	/^			val authToken: String = doc.hcursor.get[String]("full_url").toOption$/;"	l
+authToken	src/main/scala/irobo/api/endpoint/YieldEndPoint.scala	/^			val authToken: Option[String]  = doc.hcursor.get[String]("auth_token").toOption$/;"	l
+authToken	src/main/scala/irobo/api/model/CustomerResponse.scala	/^  def authToken : Option[String]$/;"	m
+authToken	src/main/scala/irobo/api/service/AccountService.scala	/^    val authToken  = verifyTokenResponse.authToken$/;"	l
+authToken	src/main/scala/irobo/api/service/AccountSpecsService.scala	/^    val authToken = Some(verifyTokenResponse.authToken)$/;"	l
+authToken	src/main/scala/irobo/api/service/CustomerService.scala	/^    val authToken  = verifyTokenResponse.authToken$/;"	l
+authUrl	src/main/scala/irobo/api/Server.scala	/^  val authUrl     = config.getString("authUrl")$/;"	l
+awsKMSDecryption	src/main/scala/irobo/api/Server.scala	/^  val awsKMSDecryption    = new AwsKmsDecryption()(monixScheduler)$/;"	l
+awsKMSDecryption	src/test/scala/irobo/api/model/dao/AccountDaoTest.scala	/^      val awsKMSDecryption = new AwsKmsDecryption()(monixScheduler)$/;"	l
+awsKMSDecryption	src/test/scala/irobo/api/model/dao/KospiDaoTest.scala	/^      val awsKMSDecryption = new AwsKmsDecryption()(monixScheduler)$/;"	l
+awsKMSDecryption	src/test/scala/irobo/api/service/AccountServiceTest.scala	/^      val awsKMSDecryption = new AwsKmsDecryption()(monixScheduler)$/;"	l
+awsKMSDecryption	src/test/scala/irobo/api/service/CustomerServiceTest.scala	/^      val awsKMSDecryption = new AwsKmsDecryption()(monixScheduler)$/;"	l
+bm	src/main/scala/irobo/api/service/YieldService.scala	/^              val bm = bms.find(_.cdate == yieldOutput.cdate).flatMap(_.output)$/;"	l
+charset	src/main/scala/irobo/api/service/UrlService.scala	/^	val charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"$/;"	l
+client	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  private val client   = ClientBuilder()$/;"	l
+commissionDao	src/main/scala/irobo/api/Server.scala	/^  val commissionDao = new CommissionDao(pool)$/;"	l
+commissionDao	src/test/scala/irobo/api/model/dao/CommissionDaoTest.scala	/^      val commissionDao = new CommissionDao(pool)$/;"	l
+commissionDao	src/test/scala/irobo/api/service/CommissionServiceTest.scala	/^      val commissionDao     = new CommissionDao(pool)$/;"	l
+commissionService	src/main/scala/irobo/api/Server.scala	/^  val commissionService   = new CommissionService(commissionDao)$/;"	l
+commissionService	src/test/scala/irobo/api/service/CommissionServiceTest.scala	/^      val commissionService = new CommissionService(commissionDao)$/;"	l
+companyDao	src/main/scala/irobo/api/Server.scala	/^  val companyDao    = new CompanyDao(pool)$/;"	l
+companyEndPoint	src/main/scala/irobo/api/Server.scala	/^  val companyEndPoint      = new CompanyEndPoint(companyService, authService)$/;"	l
+companyService	src/main/scala/irobo/api/Server.scala	/^  val companyService      = new CompanyService(companyDao)$/;"	l
+conf	src/main/scala/irobo/api/Server.scala	/^    val conf        = new Configuration($/;"	l
+config	src/main/scala/irobo/api/Server.scala	/^  val config = ConfigFactory.load()$/;"	l
+config	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^    val config            = ConfigFactory.load()$/;"	l
+confirmAccount	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^  def confirmAccount (accountID : Option[Int] = None)(implicit ec: ExecutionContext) = {$/;"	m
+confirmRowsAffected	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^        val confirmRowsAffected = confirmResult.rowsAffected$/;"	l
+confirmSQL	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^    val confirmSQL = $/;"	l
+criticalLogger	src/main/scala/irobo/api/Logger.scala	/^  final val criticalLogger = org.slf4j.LoggerFactory.getLogger("critical")$/;"	l
+cryptoDao	src/main/scala/irobo/api/Server.scala	/^  val cryptoDao     = new CryptoDao(pool)$/;"	l
+cryptoDao	src/test/scala/irobo/api/model/dao/CryptoDaoTest.scala	/^      val cryptoDao = new CryptoDao(pool)$/;"	l
+cryptoDao	src/test/scala/irobo/api/service/AccountServiceTest.scala	/^      val cryptoDao        = new CryptoDao(pool)$/;"	l
+cryptoDao	src/test/scala/irobo/api/service/CustomerServiceTest.scala	/^      val cryptoDao        = new CryptoDao(pool)$/;"	l
+cryptoService	src/main/scala/irobo/api/Server.scala	/^  val cryptoService       = new CryptoService(awsKMSDecryption, dataKeyDao, cryptoDao)$/;"	l
+cryptoService	src/test/scala/irobo/api/service/AccountServiceTest.scala	/^      val cryptoService    = new CryptoService(awsKMSDecryption, dataKeyDao, cryptoDao)$/;"	l
+cryptoService	src/test/scala/irobo/api/service/CustomerServiceTest.scala	/^      val cryptoService    = new CryptoService(awsKMSDecryption, dataKeyDao, cryptoDao)$/;"	l
+current	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val current = DnsResolvingCluster.addResolver(host, port, outgoing)$/;"	l
+current	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val current = resolve(host, port)$/;"	l
+customerDao	src/main/scala/irobo/api/Server.scala	/^  val customerDao   = new CustomerDao(pool)$/;"	l
+customerDao	src/test/scala/irobo/api/model/dao/AccountDaoTest.scala	/^      val customerDao = new CustomerDao(pool)$/;"	l
+customerDao	src/test/scala/irobo/api/model/dao/CustomerDaoTest.scala	/^      val customerDao = new CustomerDao(pool)$/;"	l
+customerDao	src/test/scala/irobo/api/service/AccountServiceTest.scala	/^      val customerDao      = new CustomerDao(pool)$/;"	l
+customerDao	src/test/scala/irobo/api/service/CustomerServiceTest.scala	/^      val customerDao      = new CustomerDao(pool)$/;"	l
+customerEndPoint	src/main/scala/irobo/api/Server.scala	/^  val customerEndPoint     = new CustomerEndPoint(customerService, authService)$/;"	l
+customerID	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^    val customerID    = accountAdd.customerID$/;"	l
+customerID	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^    val customerID    = accountAddRequest.customerID$/;"	l
+customerID	src/main/scala/irobo/api/service/AccountService.scala	/^    val customerID = Format.tryStringToInt(verifyTokenResponse.customerID)$/;"	l
+customerID	src/main/scala/irobo/api/service/AccountSpecsService.scala	/^    val customerID = Format.tryStringToInt(verifyTokenResponse.customerID)$/;"	l
+customerID	src/main/scala/irobo/api/service/AssetService.scala	/^          val customerID = Format.tryStringToInt(verifyTokenResponse.customerID)$/;"	l
+customerID	src/main/scala/irobo/api/service/CustomerService.scala	/^    val customerID = Format.tryStringToInt(verifyTokenResponse.customerID)$/;"	l
+customerID	src/main/scala/irobo/api/service/EvaluationService.scala	/^    val customerID = Format.tryStringToInt(verifyTokenResponse.customerID)$/;"	l
+customerID	src/main/scala/irobo/api/service/SectorService.scala	/^    val customerID = Format.tryStringToInt(verifyTokenResponse.customerID)$/;"	l
+customerID	src/main/scala/irobo/api/service/TerminatedService.scala	/^    val customerID = Format.tryStringToInt(verifyTokenResponse.customerID)$/;"	l
+customerService	src/main/scala/irobo/api/Server.scala	/^  val customerService     = new CustomerService(cryptoService, customerDao, accountDao)$/;"	l
+customerService	src/test/scala/irobo/api/service/CustomerServiceTest.scala	/^      val customerService  = new CustomerService(cryptoService, customerDao, accountDao)$/;"	l
+dataKeyDao	src/main/scala/irobo/api/Server.scala	/^  val dataKeyDao    = new DataKeyDao(pool)$/;"	l
+dataKeyDao	src/test/scala/irobo/api/service/AccountServiceTest.scala	/^      val dataKeyDao       = new DataKeyDao(pool)$/;"	l
+dataKeyDao	src/test/scala/irobo/api/service/CustomerServiceTest.scala	/^      val dataKeyDao       = new DataKeyDao(pool)$/;"	l
+database	src/main/scala/irobo/api/Server.scala	/^    val database    = Option(mySqlConfig.getString("database"))$/;"	l
+date	src/test/scala/irobo/api/service/DateServiceTest.scala	/^        val date = Date($/;"	l
+dateDao	src/main/scala/irobo/api/Server.scala	/^  val dateDao       = new DateDao(pool)$/;"	l
+dateDao	src/test/scala/irobo/api/model/dao/DateDaoTest.scala	/^      val dateDao = new DateDao(pool)$/;"	l
+dateDao	src/test/scala/irobo/api/service/DateServiceTest.scala	/^      val dateDao     = new DateDao(pool)$/;"	l
+dateService	src/main/scala/irobo/api/Server.scala	/^  val dateService         = new DateService(dateDao)$/;"	l
+dateService	src/test/scala/irobo/api/service/DateServiceTest.scala	/^      val dateService = new DateService(dateDao)$/;"	l
+dbConfig	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^    val dbConfig = new Configuration($/;"	l
+dbHost	src/main/scala/irobo/api/Server.scala	/^    val dbHost      = mySqlConfig.getString("host")$/;"	l
+dbPassword	src/main/scala/irobo/api/Server.scala	/^    val dbPassword  = Option(mySqlConfig.getString("password")).filterNot(_.isEmpty)$/;"	l
+dbPort	src/main/scala/irobo/api/Server.scala	/^    val dbPort      = Option(mySqlConfig.getInt("port")).getOrElse(3306)$/;"	l
+dbUserName	src/main/scala/irobo/api/Server.scala	/^    val dbUserName  = mySqlConfig.getString("username")$/;"	l
+decrypt	src/main/scala/irobo/api/model/dao/CryptoDao.scala	/^  def decrypt(text : Option[String], key: String)(implicit ec: ExecutionContext): Future[Option[String]] = {$/;"	m
+decrypt	src/main/scala/irobo/api/service/AccountService.scala	/^    def decrypt(account: Account): Future[Account] = {$/;"	m
+decrypt	src/main/scala/irobo/api/service/CryptoService.scala	/^	def decrypt(text: Option[String]): Future[Option[String]] = {$/;"	m
+decrypt	src/main/scala/irobo/api/service/CustomerService.scala	/^  private[service] def decrypt(customer: Option[Customer]): Future[Option[Customer]] = {$/;"	m
+decrypt	src/main/scala/irobo/api/service/TerminatedService.scala	/^    def decrypt(terminated: Terminated): Future[Terminated] = {$/;"	m
+decrypt	src/main/scala/irobo/api/service/TerminatedService.scala	/^  private[service] def decrypt(terminatedList : Seq[Terminated]): Future[Seq[Terminated]] = {$/;"	m
+decryptAccounts	src/main/scala/irobo/api/service/AccountService.scala	/^  private[service] def decryptAccounts(accounts : Seq[Account]): Future[Seq[Account]] = {$/;"	m
+digits	src/main/scala/irobo/api/service/UrlService.scala	/^        val digits = loop(num) $/;"	l
+digits	src/main/scala/irobo/api/service/UrlService.scala	/^    val digits = str.map { eachChar => charset.indexOf(eachChar) }.reverse$/;"	l
+disableForeignKeyCheck	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def disableForeignKeyCheck() = pool.sendQuery("SET FOREIGN_KEY_CHECKS=0")$/;"	m
+doc	src/main/scala/irobo/api/endpoint/AccountEndPoint.scala	/^			val doc: Json = parse(json.toString).getOrElse(Json.Null)$/;"	l
+doc	src/main/scala/irobo/api/endpoint/AccountSpecsEndPoint.scala	/^			val doc: Json = parse(json.toString).getOrElse(Json.Null)$/;"	l
+doc	src/main/scala/irobo/api/endpoint/AssetEndPoint.scala	/^			val doc: Json = parse(json.toString).getOrElse(Json.Null)$/;"	l
+doc	src/main/scala/irobo/api/endpoint/CustomerEndPoint.scala	/^			val doc: Json = parse(json.toString).getOrElse(Json.Null)$/;"	l
+doc	src/main/scala/irobo/api/endpoint/EvaluationEndPoint.scala	/^			val doc: Json = parse(json.toString).getOrElse(Json.Null)$/;"	l
+doc	src/main/scala/irobo/api/endpoint/SectorEndPoint.scala	/^			val doc: Json = parse(json.toString).getOrElse(Json.Null)$/;"	l
+doc	src/main/scala/irobo/api/endpoint/UrlEndPoint.scala	/^			val doc: Json = parse(json.toString).getOrElse(Json.Null)$/;"	l
+doc	src/main/scala/irobo/api/endpoint/YieldEndPoint.scala	/^			val doc: Json = parse(json.toString).getOrElse(Json.Null)$/;"	l
+enableForeignKeyCheck	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def enableForeignKeyCheck()  = pool.sendQuery("SET FOREIGN_KEY_CHECKS=1")$/;"	m
+encrypt	src/main/scala/irobo/api/model/dao/CryptoDao.scala	/^  def encrypt(text : Option[String], key: String)(implicit ec: ExecutionContext): Future[Option[String]] = {$/;"	m
+encrypt	src/main/scala/irobo/api/service/AccountService.scala	/^  private[service] def encrypt(request: AccountAddRequest): Future[AccountAddRequest] = {$/;"	m
+encrypt	src/main/scala/irobo/api/service/CryptoService.scala	/^	def encrypt(text: Option[String]): Future[Option[String]] = {$/;"	m
+evaluationDao	src/main/scala/irobo/api/Server.scala	/^  val evaluationDao = new EvaluationDao(pool)$/;"	l
+evaluationDao	src/test/scala/irobo/api/model/dao/EvaluationDaoTest.scala	/^      val evaluationDao = new EvaluationDao(pool)$/;"	l
+evaluationDao	src/test/scala/irobo/api/service/EvaluationServiceTest.scala	/^      val evaluationDao     = new EvaluationDao(pool)$/;"	l
+evaluationEndPoint	src/main/scala/irobo/api/Server.scala	/^  val evaluationEndPoint   = new EvaluationEndPoint(evaluationService, authService)$/;"	l
+evaluationService	src/main/scala/irobo/api/Server.scala	/^  val evaluationService   = new EvaluationService(evaluationDao)$/;"	l
+evaluationService	src/test/scala/irobo/api/service/EvaluationServiceTest.scala	/^      val evaluationService = new EvaluationService(evaluationDao)$/;"	l
+expectedAccounts	src/test/scala/irobo/api/model/dao/AccountDaoTest.scala	/^          val expectedAccounts = Account($/;"	l
+expectedOutput	src/test/scala/irobo/api/model/dao/AssetDaoTest.scala	/^          val expectedOutput = Seq($/;"	l
+expectedOutput	src/test/scala/irobo/api/model/dao/CustomerDaoTest.scala	/^          val expectedOutput = Some($/;"	l
+expectedOutput	src/test/scala/irobo/api/model/dao/EvaluationDaoTest.scala	/^          val expectedOutput = Some($/;"	l
+expectedOutput	src/test/scala/irobo/api/model/dao/IODaoTest.scala	/^          val expectedOutput = Vector($/;"	l
+expectedOutput	src/test/scala/irobo/api/model/dao/KospiDaoTest.scala	/^          val expectedOutput = Some($/;"	l
+expectedOutput	src/test/scala/irobo/api/model/dao/SectorDaoTest.scala	/^          val expectedOutput = Seq($/;"	l
+expectedOutput	src/test/scala/irobo/api/service/AccountServiceTest.scala	/^          val expectedOutput = $/;"	l
+expectedOutput	src/test/scala/irobo/api/service/AccountServiceTest.scala	/^          val expectedOutput = CustomerAccountResponse ($/;"	l
+expectedOutput	src/test/scala/irobo/api/service/AccountServiceTest.scala	/^          val expectedOutput = CustomerAccountResponse($/;"	l
+expectedOutput	src/test/scala/irobo/api/service/AccountServiceTest.scala	/^          val expectedOutput = ResultResponse($/;"	l
+expectedOutput	src/test/scala/irobo/api/service/AssetServiceTest.scala	/^          val expectedOutput = CustomerAssetResponse ($/;"	l
+expectedOutput	src/test/scala/irobo/api/service/AssetServiceTest.scala	/^          val expectedOutput = CustomerAssetResponse($/;"	l
+expectedOutput	src/test/scala/irobo/api/service/CustomerServiceTest.scala	/^          val expectedOutput = $/;"	l
+expectedOutput	src/test/scala/irobo/api/service/CustomerServiceTest.scala	/^          val expectedOutput = CustomerInfoResponse($/;"	l
+expectedOutput	src/test/scala/irobo/api/service/DateServiceTest.scala	/^          val expectedOutput = Some($/;"	l
+expectedOutput	src/test/scala/irobo/api/service/EvaluationServiceTest.scala	/^          val expectedOutput = EvaluationResponse($/;"	l
+expectedOutput	src/test/scala/irobo/api/service/IOServiceTest.scala	/^					val expectedOutput = Vector($/;"	l
+expectedOutput	src/test/scala/irobo/api/service/IOServiceTest.scala	/^					val expectedOutput = Vector()$/;"	l
+expectedOutput	src/test/scala/irobo/api/service/SectorServiceTest.scala	/^					val expectedOutput = Vector($/;"	l
+expectedOutput1	src/test/scala/irobo/api/model/dao/DateDaoTest.scala	/^          val expectedOutput1 = Some($/;"	l
+expectedOutput2	src/test/scala/irobo/api/model/dao/DateDaoTest.scala	/^          val expectedOutput2 = Some($/;"	l
+expectedOutput3	src/test/scala/irobo/api/model/dao/DateDaoTest.scala	/^          val expectedOutput3 = Some($/;"	l
+f	src/main/scala/irobo/api/service/HttpInvoker.scala	/^      val f = client(request).asScala$/;"	l
+f	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val f = client(request).asScala$/;"	l
+factory	src/main/scala/irobo/api/Server.scala	/^    val factory    = new MySQLConnectionFactory(conf)$/;"	l
+factory	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^    val factory = new MySQLConnectionFactory(dbConfig)$/;"	l
+fullUrlHash	src/main/scala/irobo/api/service/UrlService.scala	/^    val fullUrlHash = getFullUrlHash(fullUrl)$/;"	l
+get	src/main/scala/irobo/api/model/dao/CommissionDao.scala	/^  def get(accountIDOpt: Option[Int]): Future[Option[Commission]] = {$/;"	m
+get	src/main/scala/irobo/api/model/dao/KospiDao.scala	/^  def get(accountIDOpt: Option[Int]): Future[Option[Kospi]] = {$/;"	m
+get	src/main/scala/irobo/api/model/dao/RowDao.scala	/^  def get(sql: String)(implicit ec: ExecutionContext): Future[Option[T]] = {$/;"	m
+getAccountAssets	src/main/scala/irobo/api/endpoint/AssetEndPoint.scala	/^  def getAccountAssets: Endpoint[CustomerAssetResponse] = $/;"	m
+getAccountAssets	src/main/scala/irobo/api/service/AssetService.scala	/^  def getAccountAssets($/;"	m
+getAccountID	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^  def getAccountID($/;"	m
+getAccountSectors	src/main/scala/irobo/api/endpoint/SectorEndPoint.scala	/^  def getAccountSectors: Endpoint[CustomerSectorResponse] = $/;"	m
+getAccountSpecs	src/main/scala/irobo/api/endpoint/AccountSpecsEndPoint.scala	/^  def getAccountSpecs: Endpoint[AccountSpecsResponse] = $/;"	m
+getAccountSpecsResponse	src/main/scala/irobo/api/service/AccountSpecsService.scala	/^  def getAccountSpecsResponse($/;"	m
+getAccountYields	src/main/scala/irobo/api/endpoint/YieldEndPoint.scala	/^  def getAccountYields: Endpoint[CustomerYieldResponse] = $/;"	m
+getAccounts	src/main/scala/irobo/api/service/AccountService.scala	/^	def getAccounts(verifyTokenResponse : VerifyTokenResponse): Future[CustomerAccountResponse] = {$/;"	m
+getCommission	src/main/scala/irobo/api/service/CommissionService.scala	/^  def getCommission(accountID: Option[Int]): Future[Option[Commission]] = {$/;"	m
+getCompanies	src/main/scala/irobo/api/endpoint/CompanyEndPoint.scala	/^  def getCompanies: Endpoint[CompanyResponse] = $/;"	m
+getCompanies	src/main/scala/irobo/api/service/CompanyService.scala	/^  def getCompanies(): Future[CompanyResponse] = {$/;"	m
+getContractAmount	src/main/scala/irobo/api/service/DateService.scala	/^  def getContractAmount($/;"	m
+getCriticalLogger	src/main/scala/irobo/api/Logger.scala	/^  def getCriticalLogger = org.slf4j.LoggerFactory.getLogger("critical")$/;"	m
+getCustomer	src/main/scala/irobo/api/endpoint/CustomerEndPoint.scala	/^  def getCustomer: Endpoint[CustomerInfoResponse] = $/;"	m
+getCustomer	src/main/scala/irobo/api/model/dao/CustomerDao.scala	/^  def getCustomer(customerID: Int): Future[Option[Customer]] = {$/;"	m
+getCustomer	src/main/scala/irobo/api/service/CustomerService.scala	/^  def getCustomer(customerID : Int): Future[Option[Customer]] = {$/;"	m
+getCustomerAccounts	src/main/scala/irobo/api/endpoint/AccountEndPoint.scala	/^  def getCustomerAccounts: Endpoint[CustomerAccountResponse] = $/;"	m
+getCustomerInfoResponse	src/main/scala/irobo/api/service/CustomerService.scala	/^  def getCustomerInfoResponse(verifyTokenResponse: VerifyTokenResponse): Future[CustomerInfoResponse] = {$/;"	m
+getDataKey	src/main/scala/irobo/api/service/CryptoService.scala	/^  def getDataKey(): Future[String] = {$/;"	m
+getDate	src/main/scala/irobo/api/model/dao/DateDao.scala	/^  def getDate(accountID: Int) : Future[Option[Date]] = {$/;"	m
+getDate	src/main/scala/irobo/api/service/DateService.scala	/^  def getDate(accountID : Option[Int]): Future[Option[Date]] = {$/;"	m
+getEvaluation	src/main/scala/irobo/api/endpoint/EvaluationEndPoint.scala	/^  def getEvaluation: Endpoint[EvaluationResponse] = $/;"	m
+getEvaluation	src/main/scala/irobo/api/model/dao/EvaluationDao.scala	/^  def getEvaluation(accountID: Int) : Future[Option[Evaluation]] = {$/;"	m
+getEvaluation	src/main/scala/irobo/api/service/EvaluationService.scala	/^  def getEvaluation(accountID: Option[Int]): Future[Option[Evaluation]] = {$/;"	m
+getEvaluationResponse	src/main/scala/irobo/api/service/EvaluationService.scala	/^  def getEvaluationResponse($/;"	m
+getFullUrl	src/main/scala/irobo/api/service/UrlService.scala	/^  def getFullUrl(shortUrl: String): Future[Option[String]] = {$/;"	m
+getFullUrlHash	src/main/scala/irobo/api/service/UrlService.scala	/^	private[service] def getFullUrlHash(fullUrl: String): String = $/;"	m
+getIOTotal	src/main/scala/irobo/api/service/IOService.scala	/^  def getIOTotal(ioList : List[IO]): Option[Long] = ioList.headOption.map(_.total)$/;"	m
+getInitialAmount	src/main/scala/irobo/api/service/DateService.scala	/^  def getInitialAmount(date: Option[Date]): Option[Long] = $/;"	m
+getInstance	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^  def getInstance(row: RowData): Account = {$/;"	m
+getInstance	src/main/scala/irobo/api/model/dao/AssetDao.scala	/^  def getInstance(row: RowData): Asset = $/;"	m
+getInstance	src/main/scala/irobo/api/model/dao/CommissionDao.scala	/^  def getInstance(row: RowData): Commission = $/;"	m
+getInstance	src/main/scala/irobo/api/model/dao/CompanyDao.scala	/^  def getInstance(row: RowData): Company= {$/;"	m
+getInstance	src/main/scala/irobo/api/model/dao/CustomerDao.scala	/^  def getInstance(row: RowData): Customer = $/;"	m
+getInstance	src/main/scala/irobo/api/model/dao/DataKeyDao.scala	/^  def getInstance(row: RowData): DataKey = {$/;"	m
+getInstance	src/main/scala/irobo/api/model/dao/DateDao.scala	/^	def getInstance(row: RowData): Date = {$/;"	m
+getInstance	src/main/scala/irobo/api/model/dao/EvaluationDao.scala	/^  def getInstance(row: RowData): Evaluation = $/;"	m
+getInstance	src/main/scala/irobo/api/model/dao/IODao.scala	/^	def getInstance(row: RowData): IO = $/;"	m
+getInstance	src/main/scala/irobo/api/model/dao/KospiDao.scala	/^  def getInstance(row: RowData): Kospi = $/;"	m
+getInstance	src/main/scala/irobo/api/model/dao/RowDao.scala	/^  def getInstance(row: RowData): T $/;"	m
+getInstance	src/main/scala/irobo/api/model/dao/SectorDao.scala	/^  def getInstance(row: RowData): Sector = $/;"	m
+getInstance	src/main/scala/irobo/api/model/dao/TerminatedDao.scala	/^  def getInstance(row: RowData): Terminated = {$/;"	m
+getInstance	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^  def getInstance(row: RowData): Url = {$/;"	m
+getInstance	src/main/scala/irobo/api/model/dao/YieldDao.scala	/^  def getInstance(row: RowData): Yield = $/;"	m
+getKospi	src/main/scala/irobo/api/service/YieldService.scala	/^  def getKospi(accountID: Option[Int]): Future[Option[Kospi]] = $/;"	m
+getLocalDateTime	src/main/scala/irobo/api/JsonDecoder.scala	/^  def getLocalDateTime(input : String) =$/;"	m
+getLogger	src/main/scala/irobo/api/Logger.scala	/^  def getLogger(clazz: Class[_]) = LoggerFactory.getLogger(clazz)$/;"	m
+getSectors	src/main/scala/irobo/api/service/SectorService.scala	/^  def getSectors($/;"	m
+getShortUrl	src/main/scala/irobo/api/endpoint/UrlEndPoint.scala	/^  def getShortUrl(): Endpoint[String] = {$/;"	m
+getShortUrl	src/main/scala/irobo/api/service/UrlService.scala	/^	def getShortUrl(fullUrl: String): Future[Option[String]] = {$/;"	m
+getUrl	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^  def getUrl(fullUrlHash: String) : Future[Option[Url]] = {$/;"	m
+getUrlById	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^  def getUrlById(id: Long) : Future[Option[Url]] = {$/;"	m
+getYieldAcc	src/main/scala/irobo/api/model/dao/YieldDao.scala	/^  def getYieldAcc(accountIDOpt: Option[Int]): Future[Option[Double]] = {$/;"	m
+getYieldAcc	src/main/scala/irobo/api/service/YieldService.scala	/^  def getYieldAcc(accountID: Option[Int]): Future[Option[Double]] = $/;"	m
+getYieldResponse	src/main/scala/irobo/api/service/YieldService.scala	/^  def getYieldResponse($/;"	m
+hosts	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val hosts = InetAddress.getAllByName(host)$/;"	l
+httpInvoker	src/main/scala/irobo/api/Server.scala	/^  val httpInvoker         = HttpInvoker(authUrl, authPort)$/;"	l
+id	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^    val id = customerID.get$/;"	l
+id	src/main/scala/irobo/api/service/UrlService.scala	/^    val id = toBase10(shortUrl) $/;"	l
+initialAmount	src/main/scala/irobo/api/service/AccountSpecsService.scala	/^            val initialAmount  : Option[Long] = dateService.getInitialAmount(date)$/;"	l
+input	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^    val input = Array($/;"	l
+input	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^    val input = Array(accountNumber)$/;"	l
+input	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^    val input = Array($/;"	l
+insert	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^  def insert($/;"	m
+insert	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def insert() = {$/;"	m
+insertAccount	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def insertAccount() = {$/;"	m
+insertBM	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def insertBM() = {$/;"	m
+insertBranch	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def insertBranch()       = pool.sendQuery("""INSERT INTO branch (branch_id, company_id, branch_name) VALUES (1, 1, "서울"), (2, 2, "서울"), (3, 3, "서울")""")$/;"	m
+insertCompany	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def insertCompany()      = pool.sendQuery("""INSERT INTO company (company_id, company_name) VALUES (1, "동부"), (2, "대신"), (3, "대우")""")$/;"	m
+insertCustomer	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def insertCustomer() ={$/;"	m
+insertFullUrlHash	src/main/scala/irobo/api/service/UrlService.scala	/^	private[service] def insertFullUrlHash($/;"	m
+insertFund	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def insertFund() = {$/;"	m
+insertFundIO	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def insertFundIO() = {$/;"	m
+insertFundProduct	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def insertFundProduct() = {$/;"	m
+insertPB	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def insertPB() = {$/;"	m
+insertStockType	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def insertStockType() = pool.sendQuery("""INSERT INTO stock_type (stock_type_id, `desc`) VALUES (1, "주식"), (2, "채권")""")$/;"	m
+insertUrl	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^  def insertUrl(url: Url): Future[Long] = {$/;"	m
+insertUrls	src/test/scala/irobo/api/model/dao/UrlDaoTest.scala	/^      def insertUrls() = {$/;"	m
+ioDao	src/main/scala/irobo/api/Server.scala	/^  val ioDao         = new IODao(pool)$/;"	l
+ioDao	src/test/scala/irobo/api/model/dao/IODaoTest.scala	/^      val ioDao = new IODao(pool)$/;"	l
+ioDao	src/test/scala/irobo/api/service/IOServiceTest.scala	/^      val ioDao     = new IODao(pool)$/;"	l
+ioService	src/main/scala/irobo/api/Server.scala	/^  val ioService           = new IOService(ioDao)$/;"	l
+ioService	src/test/scala/irobo/api/service/IOServiceTest.scala	/^      val ioService = new IOService(ioDao)$/;"	l
+ioTotal	src/main/scala/irobo/api/service/AccountSpecsService.scala	/^            val ioTotal: Option[Long]         = ioService.getIOTotal(ioList.toList)$/;"	l
+irobo.api	src/main/scala/irobo/api/Format.scala	/^package irobo.api$/;"	p
+irobo.api	src/main/scala/irobo/api/JsonDecoder.scala	/^package irobo.api$/;"	p
+irobo.api	src/main/scala/irobo/api/JsonEncoder.scala	/^package irobo.api$/;"	p
+irobo.api	src/main/scala/irobo/api/Logger.scala	/^package irobo.api$/;"	p
+irobo.api	src/main/scala/irobo/api/Server.scala	/^package irobo.api$/;"	p
+irobo.api	src/main/scala/irobo/api/endpoint/Package.scala	/^package irobo.api$/;"	p
+irobo.api.dao	src/test/scala/irobo/api/model/dao/AccountDaoTest.scala	/^package irobo.api.dao$/;"	p
+irobo.api.dao	src/test/scala/irobo/api/model/dao/AssetDaoTest.scala	/^package irobo.api.dao$/;"	p
+irobo.api.dao	src/test/scala/irobo/api/model/dao/CommissionDaoTest.scala	/^package irobo.api.dao$/;"	p
+irobo.api.dao	src/test/scala/irobo/api/model/dao/CryptoDaoTest.scala	/^package irobo.api.dao$/;"	p
+irobo.api.dao	src/test/scala/irobo/api/model/dao/CustomerDaoTest.scala	/^package irobo.api.dao$/;"	p
+irobo.api.dao	src/test/scala/irobo/api/model/dao/DateDaoTest.scala	/^package irobo.api.dao$/;"	p
+irobo.api.dao	src/test/scala/irobo/api/model/dao/EvaluationDaoTest.scala	/^package irobo.api.dao$/;"	p
+irobo.api.dao	src/test/scala/irobo/api/model/dao/IODaoTest.scala	/^package irobo.api.dao$/;"	p
+irobo.api.dao	src/test/scala/irobo/api/model/dao/KospiDaoTest.scala	/^package irobo.api.dao$/;"	p
+irobo.api.dao	src/test/scala/irobo/api/model/dao/SectorDaoTest.scala	/^package irobo.api.dao$/;"	p
+irobo.api.dao	src/test/scala/irobo/api/model/dao/UrlDaoTest.scala	/^package irobo.api.dao$/;"	p
+irobo.api.endpoint	src/main/scala/irobo/api/endpoint/AccountEndPoint.scala	/^package irobo.api.endpoint$/;"	p
+irobo.api.endpoint	src/main/scala/irobo/api/endpoint/AccountSpecsEndPoint.scala	/^package irobo.api.endpoint$/;"	p
+irobo.api.endpoint	src/main/scala/irobo/api/endpoint/AssetEndPoint.scala	/^package irobo.api.endpoint$/;"	p
+irobo.api.endpoint	src/main/scala/irobo/api/endpoint/CompanyEndPoint.scala	/^package irobo.api.endpoint$/;"	p
+irobo.api.endpoint	src/main/scala/irobo/api/endpoint/CustomerEndPoint.scala	/^package irobo.api.endpoint$/;"	p
+irobo.api.endpoint	src/main/scala/irobo/api/endpoint/EvaluationEndPoint.scala	/^package irobo.api.endpoint$/;"	p
+irobo.api.endpoint	src/main/scala/irobo/api/endpoint/SectorEndPoint.scala	/^package irobo.api.endpoint$/;"	p
+irobo.api.endpoint	src/main/scala/irobo/api/endpoint/UrlEndPoint.scala	/^package irobo.api.endpoint$/;"	p
+irobo.api.endpoint	src/main/scala/irobo/api/endpoint/YieldEndPoint.scala	/^package irobo.api.endpoint$/;"	p
+irobo.api.endpoint	src/test/scala/irobo/api/endpoint/OrderEndPointTest.scala	/^package irobo.api.endpoint$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/Account.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/AccountAddRequest.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/AccountSpecs.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/Asset.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/Branch.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/Commission.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/Company.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/CompanyResponse.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/Customer.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/CustomerResponse.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/DataKey.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/Date.scala	/^package irobo.api.model $/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/Deposit.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/Evaluation.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/Fund.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/IO.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/Kospi.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/Result.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/Sector.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/Terminated.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/Url.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/VerifyTokenResponse.scala	/^package irobo.api.model$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/Yield.scala	/^package irobo.api.model$/;"	p
+irobo.api.model.dao	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^package irobo.api.model.dao$/;"	p
+irobo.api.model.dao	src/main/scala/irobo/api/model/dao/AssetDao.scala	/^package irobo.api.model.dao$/;"	p
+irobo.api.model.dao	src/main/scala/irobo/api/model/dao/CommissionDao.scala	/^package irobo.api.model.dao$/;"	p
+irobo.api.model.dao	src/main/scala/irobo/api/model/dao/CompanyDao.scala	/^package irobo.api.model.dao$/;"	p
+irobo.api.model.dao	src/main/scala/irobo/api/model/dao/CryptoDao.scala	/^package irobo.api.model.dao$/;"	p
+irobo.api.model.dao	src/main/scala/irobo/api/model/dao/CustomerDao.scala	/^package irobo.api.model.dao$/;"	p
+irobo.api.model.dao	src/main/scala/irobo/api/model/dao/DataKeyDao.scala	/^package irobo.api.model.dao$/;"	p
+irobo.api.model.dao	src/main/scala/irobo/api/model/dao/DateDao.scala	/^package irobo.api.model.dao$/;"	p
+irobo.api.model.dao	src/main/scala/irobo/api/model/dao/EvaluationDao.scala	/^package irobo.api.model.dao$/;"	p
+irobo.api.model.dao	src/main/scala/irobo/api/model/dao/IODao.scala	/^package irobo.api.model.dao$/;"	p
+irobo.api.model.dao	src/main/scala/irobo/api/model/dao/KospiDao.scala	/^package irobo.api.model.dao$/;"	p
+irobo.api.model.dao	src/main/scala/irobo/api/model/dao/RowDao.scala	/^package irobo.api.model.dao$/;"	p
+irobo.api.model.dao	src/main/scala/irobo/api/model/dao/SectorDao.scala	/^package irobo.api.model.dao$/;"	p
+irobo.api.model.dao	src/main/scala/irobo/api/model/dao/TerminatedDao.scala	/^package irobo.api.model.dao$/;"	p
+irobo.api.model.dao	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^package irobo.api.model.dao$/;"	p
+irobo.api.model.dao	src/main/scala/irobo/api/model/dao/YieldDao.scala	/^package irobo.api.model.dao$/;"	p
+irobo.api.model.dao	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^package irobo.api.model.dao$/;"	p
+irobo.api.service	src/main/scala/irobo/api/service/AccountService.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/main/scala/irobo/api/service/AccountSpecsService.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/main/scala/irobo/api/service/AssetService.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/main/scala/irobo/api/service/AuthService.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/main/scala/irobo/api/service/CommissionService.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/main/scala/irobo/api/service/CompanyService.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/main/scala/irobo/api/service/CryptoService.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/main/scala/irobo/api/service/CustomerService.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/main/scala/irobo/api/service/DateService.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/main/scala/irobo/api/service/EvaluationService.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/main/scala/irobo/api/service/FutureConvert.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/main/scala/irobo/api/service/HttpInvoker.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/main/scala/irobo/api/service/IOService.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/main/scala/irobo/api/service/SectorService.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/main/scala/irobo/api/service/TerminatedService.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/main/scala/irobo/api/service/UrlService.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/main/scala/irobo/api/service/YieldService.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/test/scala/irobo/api/service/AccountServiceTest.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/test/scala/irobo/api/service/AssetServiceTest.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/test/scala/irobo/api/service/CommissionServiceTest.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/test/scala/irobo/api/service/CustomerServiceTest.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/test/scala/irobo/api/service/DateServiceTest.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/test/scala/irobo/api/service/EvaluationServiceTest.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/test/scala/irobo/api/service/IOServiceTest.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/test/scala/irobo/api/service/SectorServiceTest.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^package irobo.api.service$/;"	p
+isMainAccount	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^    val isMainAccount = accountAdd.isMainAccount$/;"	l
+json	src/main/scala/irobo/api/service/AuthService.scala	/^		val json = s"""{"auth_token": "$authToken", "privilege": $privilege}"""$/;"	l
+key	src/test/scala/irobo/api/model/dao/CryptoDaoTest.scala	/^      val key = "42586A53CB22ADD17F9E051545B7A0E1FF5F2CC9C922874F976AC1540AE97D0F"$/;"	l
+kospiDao	src/main/scala/irobo/api/Server.scala	/^  val kospiDao      = new KospiDao(pool)$/;"	l
+kospiDao	src/test/scala/irobo/api/model/dao/KospiDaoTest.scala	/^      val kospiDao = new KospiDao(pool)$/;"	l
+list	src/main/scala/irobo/api/model/dao/AssetDao.scala	/^  def list(accountIDOpt : Option[Int]): Future[Seq[Asset]] = {$/;"	m
+list	src/main/scala/irobo/api/model/dao/CompanyDao.scala	/^  def list() : Future[Seq[Company]] = {$/;"	m
+list	src/main/scala/irobo/api/model/dao/CustomerDao.scala	/^  def list(): Future[Seq[Customer]] = {$/;"	m
+list	src/main/scala/irobo/api/model/dao/DataKeyDao.scala	/^  def list(): Future[Seq[DataKey]] = {$/;"	m
+list	src/main/scala/irobo/api/model/dao/RowDao.scala	/^  def list(sql: String)(implicit ec: ExecutionContext): Future[Seq[T]] = {$/;"	m
+list	src/main/scala/irobo/api/model/dao/SectorDao.scala	/^  def list(accountIDOpt : Option[Int]): Future[Seq[Sector]] = {$/;"	m
+list	src/main/scala/irobo/api/model/dao/TerminatedDao.scala	/^  def list(customerID: Option[Int]): Future[Seq[Terminated]] = {$/;"	m
+list	src/main/scala/irobo/api/service/TerminatedService.scala	/^	def list(verifyTokenResponse : VerifyTokenResponse): Future[CustomerTerminatedResponse] = {$/;"	m
+listAccounts	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^  def listAccounts(customerID : Option[Int]) : Future[Seq[Account]] = {$/;"	m
+listBMYield	src/main/scala/irobo/api/model/dao/YieldDao.scala	/^  def listBMYield($/;"	m
+listIO	src/main/scala/irobo/api/model/dao/IODao.scala	/^  def listIO(accountID: Int) : Future[Seq[IO]] = {$/;"	m
+listIO	src/main/scala/irobo/api/service/IOService.scala	/^  def listIO(accountID : Option[Int]): Future[Seq[IO]] = ioDao.listIO(accountID.get) $/;"	m
+listTerminatedAccounts	src/main/scala/irobo/api/endpoint/AccountEndPoint.scala	/^  def listTerminatedAccounts: Endpoint[CustomerTerminatedResponse] = $/;"	m
+listYield	src/main/scala/irobo/api/model/dao/YieldDao.scala	/^  def listYield($/;"	m
+logger	src/main/scala/irobo/api/Logger.scala	/^  final val logger = LoggerFactory.getLogger(getClass)$/;"	l
+logger	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  private val logger   = Logger.getLogger(this.getClass)$/;"	l
+loop	src/main/scala/irobo/api/service/UrlService.scala	/^    def loop($/;"	m
+mainAccountID	src/main/scala/irobo/api/endpoint/CustomerEndPoint.scala	/^			val mainAccountID : Option[Int] = doc.hcursor.get[Int]("main_account_id").toOption$/;"	l
+mainAccountID	src/main/scala/irobo/api/service/AccountService.scala	/^            val mainAccountID        = decrypted.headOption.flatMap(_.mainAccountID)$/;"	l
+monixScheduler	src/main/scala/irobo/api/Server.scala	/^  val monixScheduler              = $/;"	l
+monixScheduler	src/test/scala/irobo/api/model/dao/AccountDaoTest.scala	/^      val monixScheduler = monix.execution.Scheduler.Implicits.global$/;"	l
+monixScheduler	src/test/scala/irobo/api/model/dao/KospiDaoTest.scala	/^      val monixScheduler = monix.execution.Scheduler.Implicits.global$/;"	l
+monixScheduler	src/test/scala/irobo/api/service/AccountServiceTest.scala	/^      val monixScheduler = monix.execution.Scheduler.Implicits.global$/;"	l
+monixScheduler	src/test/scala/irobo/api/service/AssetServiceTest.scala	/^      val monixScheduler = monix.execution.Scheduler.Implicits.global$/;"	l
+monixScheduler	src/test/scala/irobo/api/service/CommissionServiceTest.scala	/^      val monixScheduler = monix.execution.Scheduler.Implicits.global$/;"	l
+monixScheduler	src/test/scala/irobo/api/service/CustomerServiceTest.scala	/^      val monixScheduler = monix.execution.Scheduler.Implicits.global$/;"	l
+monixScheduler	src/test/scala/irobo/api/service/DateServiceTest.scala	/^      val monixScheduler = monix.execution.Scheduler.Implicits.global$/;"	l
+monixScheduler	src/test/scala/irobo/api/service/EvaluationServiceTest.scala	/^      val monixScheduler = monix.execution.Scheduler.Implicits.global$/;"	l
+monixScheduler	src/test/scala/irobo/api/service/IOServiceTest.scala	/^      val monixScheduler = monix.execution.Scheduler.Implicits.global$/;"	l
+monixScheduler	src/test/scala/irobo/api/service/SectorServiceTest.scala	/^      val monixScheduler = monix.execution.Scheduler.Implicits.global$/;"	l
+monixScheduler	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^      val monixScheduler = monix.execution.Scheduler.Implicits.global$/;"	l
+mySqlConfig	src/main/scala/irobo/api/Server.scala	/^    val mySqlConfig = config.getConfig("mySqlConfig")$/;"	l
+mySqlConfig	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^    val mySqlConfig       = config.getConfig("mySqlConfig")$/;"	l
+newDigits	src/main/scala/irobo/api/service/UrlService.scala	/^        val newDigits: Seq[Int] = digits :+ (num % 62).toInt$/;"	l
+newNum	src/main/scala/irobo/api/service/UrlService.scala	/^        val newNum: Long        = num \/ 62$/;"	l
+object	src/main/scala/irobo/api/endpoint/Package.scala	/^package object endpoint {$/;"	p
+outgoing	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val outgoing = new SpoolSource[Change[SocketAddress]]$/;"	l
+output	src/main/scala/irobo/api/endpoint/AccountEndPoint.scala	/^      val output = $/;"	l
+output	src/main/scala/irobo/api/endpoint/AccountSpecsEndPoint.scala	/^      val output = $/;"	l
+output	src/main/scala/irobo/api/endpoint/AssetEndPoint.scala	/^      val output = $/;"	l
+output	src/main/scala/irobo/api/endpoint/CompanyEndPoint.scala	/^      val output = $/;"	l
+output	src/main/scala/irobo/api/endpoint/CustomerEndPoint.scala	/^      val output = $/;"	l
+output	src/main/scala/irobo/api/endpoint/EvaluationEndPoint.scala	/^      val output = $/;"	l
+output	src/main/scala/irobo/api/endpoint/SectorEndPoint.scala	/^      val output = $/;"	l
+output	src/main/scala/irobo/api/endpoint/UrlEndPoint.scala	/^      val output = $/;"	l
+output	src/main/scala/irobo/api/endpoint/YieldEndPoint.scala	/^      val output = $/;"	l
+output	src/main/scala/irobo/api/service/UrlService.scala	/^        val output = digits.map { digit => charset.charAt(digit) }.mkString$/;"	l
+output	src/test/scala/irobo/api/service/DateServiceTest.scala	/^        val output = dateService.getInitialAmount(Some(date))$/;"	l
+output	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^        val output = urlService.getFullUrlHash("test")$/;"	l
+output	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^        val output = urlService.toBase10("cb")$/;"	l
+output	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^        val output = urlService.toBase62(Some(213890L))$/;"	l
+p	src/main/scala/irobo/api/endpoint/Package.scala	/^      val p: SPromise[A] = SPromise()$/;"	l
+p	src/main/scala/irobo/api/endpoint/Package.scala	/^      val p: TPromise[A] = new TPromise[A]$/;"	l
+p	src/main/scala/irobo/api/service/FutureConvert.scala	/^      val p: SPromise[A] = SPromise()$/;"	l
+p	src/main/scala/irobo/api/service/FutureConvert.scala	/^      val p: TPromise[A] = new TPromise[A]$/;"	l
+parseShortUrl	src/main/scala/irobo/api/service/UrlService.scala	/^  def parseShortUrl(url: String) = $/;"	m
+pendingMainAccountID	src/main/scala/irobo/api/service/AccountService.scala	/^            val pendingMainAccountID = decrypted.headOption.flatMap(_.pendingMainAccountID)$/;"	l
+pool	src/main/scala/irobo/api/Server.scala	/^  val pool = {$/;"	l
+pool	src/test/scala/irobo/api/model/dao/AccountDaoTest.scala	/^      val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/model/dao/AssetDaoTest.scala	/^      val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/model/dao/CommissionDaoTest.scala	/^      val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/model/dao/CryptoDaoTest.scala	/^      val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/model/dao/CustomerDaoTest.scala	/^      val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/model/dao/DateDaoTest.scala	/^      val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/model/dao/EvaluationDaoTest.scala	/^      val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/model/dao/IODaoTest.scala	/^      val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/model/dao/KospiDaoTest.scala	/^      val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/model/dao/SectorDaoTest.scala	/^      val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  val pool = {$/;"	l
+pool	src/test/scala/irobo/api/model/dao/UrlDaoTest.scala	/^      val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/service/AccountServiceTest.scala	/^      implicit val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/service/AssetServiceTest.scala	/^      implicit val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/service/CommissionServiceTest.scala	/^      implicit val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/service/CustomerServiceTest.scala	/^      implicit val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/service/DateServiceTest.scala	/^      implicit val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/service/EvaluationServiceTest.scala	/^      implicit val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/service/IOServiceTest.scala	/^      implicit val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/service/SectorServiceTest.scala	/^      implicit val pool = TestDatabase.pool$/;"	l
+pool	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^      implicit val pool = TestDatabase.pool$/;"	l
+poolConfig	src/main/scala/irobo/api/Server.scala	/^    val poolConfig = PoolConfiguration($/;"	l
+port	src/main/scala/irobo/api/Server.scala	/^  val port   = config.getInt("port")$/;"	l
+port	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^    val port              = config.getInt("port")$/;"	l
+protocol	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  private val protocol = if(port == 443) "https" else "http"$/;"	l
+queryParamsStr	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val queryParamsStr     = s"""${queryParams.map(v => s"${v._1}=${URLEncoder.encode(v._2, "UTF-8")}").mkString("&")}"""$/;"	l
+removed	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val removed = h.current.filter(!updated.contains(_))$/;"	l
+request	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val request            = RequestBuilder()$/;"	l
+request	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val request = RequestBuilder()$/;"	l
+request	src/test/scala/irobo/api/model/dao/AccountDaoTest.scala	/^        val request = AccountAddRequest ($/;"	l
+request	src/test/scala/irobo/api/service/AccountServiceTest.scala	/^        val request = AccountAddRequest($/;"	l
+res	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val res = hosts.filter(a => a.isInstanceOf[Inet4Address]).map(a => new InetSocketAddress(a.getHostAddress, port))$/;"	l
+resolve	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  def resolve(host: String, port: Int): Seq[SocketAddress] = {$/;"	m
+resolvers	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  private val resolvers = new java.util.concurrent.ConcurrentHashMap[String, HostToResolve]()$/;"	l
+response	src/main/scala/irobo/api/service/AuthService.scala	/^    val response = httpInvoker.sendPostJson("\/private_api\/auth\/verify-token", json).map { response =>$/;"	l
+result	src/main/scala/irobo/api/model/CustomerResponse.scala	/^  def result    : String$/;"	m
+result	src/main/scala/irobo/api/service/AccountService.scala	/^            val result = {$/;"	l
+result	src/main/scala/irobo/api/service/AssetService.scala	/^            val result = $/;"	l
+result	src/main/scala/irobo/api/service/CustomerService.scala	/^            val result = {$/;"	l
+result	src/main/scala/irobo/api/service/CustomerService.scala	/^    val result     = verifyTokenResponse.result$/;"	l
+result	src/main/scala/irobo/api/service/SectorService.scala	/^            val result = {$/;"	l
+routes	src/main/scala/irobo/api/Server.scala	/^  val routes = $/;"	l
+rowToAccountID	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^  def rowToAccountID(queryResult: QueryResult): Option[Int] = {$/;"	m
+run	src/main/scala/irobo/api/Server.scala	/^    def run() {$/;"	m
+secretKey	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^    val secretKey         = config.getString("secretKey")$/;"	l
+sectorDao	src/main/scala/irobo/api/Server.scala	/^  val sectorDao     = new SectorDao(pool)$/;"	l
+sectorDao	src/test/scala/irobo/api/model/dao/SectorDaoTest.scala	/^      val sectorDao = new SectorDao(pool)$/;"	l
+sectorDao	src/test/scala/irobo/api/service/SectorServiceTest.scala	/^      val sectorDao     = new SectorDao(pool)$/;"	l
+sectorEndPoint	src/main/scala/irobo/api/Server.scala	/^  val sectorEndPoint       = new SectorEndPoint(sectorService, authService)$/;"	l
+sectorService	src/main/scala/irobo/api/Server.scala	/^  val sectorService       = new SectorService(sectorDao)$/;"	l
+sectorService	src/test/scala/irobo/api/service/SectorServiceTest.scala	/^      val sectorService = new SectorService(sectorDao)$/;"	l
+sendGet	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  def sendGet(uri: String, queryParams: Map[String, String] = Map.empty[String, String]): Future[Response] = {$/;"	m
+sendPostJson	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  def sendPostJson(uri: String, json: String): Future[Response] = {$/;"	m
+server	src/main/scala/irobo/api/Server.scala	/^  val server = Http.serve(":" + port, routes.toService)$/;"	l
+shutDownHook	src/main/scala/irobo/api/Server.scala	/^  val shutDownHook = new Runnable {$/;"	l
+snap	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  def snap: (Seq[SocketAddress], util.Future[Spool[Change[SocketAddress]]]) = {$/;"	m
+sql	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^    val sql = $/;"	l
+sql	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^    val sql =$/;"	l
+sql	src/main/scala/irobo/api/model/dao/AssetDao.scala	/^    val sql = $/;"	l
+sql	src/main/scala/irobo/api/model/dao/CommissionDao.scala	/^    val sql = $/;"	l
+sql	src/main/scala/irobo/api/model/dao/CompanyDao.scala	/^    val sql = s"""$/;"	l
+sql	src/main/scala/irobo/api/model/dao/CryptoDao.scala	/^			val sql = $/;"	l
+sql	src/main/scala/irobo/api/model/dao/CryptoDao.scala	/^			val sql = s"""SELECT HEX(AES_ENCRYPT("${text.get}", MD5("$key"))) AS encryption from dual"""$/;"	l
+sql	src/main/scala/irobo/api/model/dao/CustomerDao.scala	/^    val sql = $/;"	l
+sql	src/main/scala/irobo/api/model/dao/DataKeyDao.scala	/^    val sql = s"""$/;"	l
+sql	src/main/scala/irobo/api/model/dao/DateDao.scala	/^    val sql = s"""$/;"	l
+sql	src/main/scala/irobo/api/model/dao/EvaluationDao.scala	/^    val sql = s"""$/;"	l
+sql	src/main/scala/irobo/api/model/dao/IODao.scala	/^    val sql = s"""$/;"	l
+sql	src/main/scala/irobo/api/model/dao/KospiDao.scala	/^    val sql = $/;"	l
+sql	src/main/scala/irobo/api/model/dao/SectorDao.scala	/^    val sql = $/;"	l
+sql	src/main/scala/irobo/api/model/dao/TerminatedDao.scala	/^        val sql = $/;"	l
+sql	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^        val sql = $/;"	l
+sql	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^    val sql = $/;"	l
+sql	src/main/scala/irobo/api/model/dao/YieldDao.scala	/^    val sql = $/;"	l
+sql	src/main/scala/irobo/api/model/dao/YieldDao.scala	/^    val sql = timeOpt match {$/;"	l
+sql	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^    val sql = $/;"	l
+sql	src/test/scala/irobo/api/model/dao/UrlDaoTest.scala	/^        val sql = $/;"	l
+start	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  private def start() {$/;"	m
+switchMainAccount	src/main/scala/irobo/api/endpoint/CustomerEndPoint.scala	/^  def switchMainAccount: Endpoint[ResultResponse] = $/;"	m
+switchMainAccount	src/main/scala/irobo/api/service/CustomerService.scala	/^  def switchMainAccount($/;"	m
+t	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val t = new Thread("DNS Resolver for HTTPInvoker") {$/;"	l
+tables	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^    val tables = Seq("account", "bm", "branch", "company", "customer", "fund", "fund_io", "fund_product", "private_banker")$/;"	l
+tables	src/test/scala/irobo/api/model/dao/UrlDaoTest.scala	/^        val tables = Seq("urls")$/;"	l
+tables	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^        val tables = Seq("urls")$/;"	l
+terminatedDao	src/main/scala/irobo/api/Server.scala	/^  val terminatedDao = new TerminatedDao(pool)$/;"	l
+terminatedService	src/main/scala/irobo/api/Server.scala	/^  val terminatedService   = new TerminatedService(cryptoService, terminatedDao)$/;"	l
+tests	src/test/scala/irobo/api/model/dao/AccountDaoTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/model/dao/AssetDaoTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/model/dao/CommissionDaoTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/model/dao/CryptoDaoTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/model/dao/CustomerDaoTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/model/dao/DateDaoTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/model/dao/EvaluationDaoTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/model/dao/IODaoTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/model/dao/KospiDaoTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/model/dao/SectorDaoTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/model/dao/UrlDaoTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/service/AccountServiceTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/service/AssetServiceTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/service/CommissionServiceTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/service/CustomerServiceTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/service/DateServiceTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/service/EvaluationServiceTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/service/IOServiceTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/service/SectorServiceTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^  val tests = this {$/;"	l
+text	src/test/scala/irobo/api/model/dao/CryptoDaoTest.scala	/^        val text = Some("76FBC1EC0CD809FAC4C7E1EE66BB6B38")$/;"	l
+text	src/test/scala/irobo/api/model/dao/CryptoDaoTest.scala	/^        val text = Some("test")$/;"	l
+toBase10	src/main/scala/irobo/api/service/UrlService.scala	/^  def toBase10(str: String): Int = {$/;"	m
+toBase62	src/main/scala/irobo/api/service/UrlService.scala	/^  def toBase62(num: Option[Long]): Option[String] = {$/;"	m
+transactionExecutionContext	src/main/scala/irobo/api/Server.scala	/^  val transactionExecutionContext = $/;"	l
+truncate	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def truncate() = {$/;"	m
+truncate	src/test/scala/irobo/api/model/dao/UrlDaoTest.scala	/^      def truncate() = {$/;"	m
+truncate	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^      def truncate() = {$/;"	m
+tryStringToInt	src/main/scala/irobo/api/Format.scala	/^  def tryStringToInt(a: String): Option[Int] =$/;"	m
+update	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  private def update(h: HostToResolve) {$/;"	m
+updateCustomerSQL	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^    val updateCustomerSQL = $/;"	l
+updateMainAccount	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^  def updateMainAccount($/;"	m
+updatePendingMainAccount	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^  def updatePendingMainAccount($/;"	m
+updateRowsAffected	src/main/scala/irobo/api/model/dao/AccountDao.scala	/^        val updateRowsAffected  = updateCustomerResult.rowsAffected$/;"	l
+updateShortUrl	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^  def updateShortUrl($/;"	m
+updated	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val updated = resolve(h.host, h.port)$/;"	l
+uriWithQueryParams	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val uriWithQueryParams = s"""$uri?$queryParamsStr"""$/;"	l
+url	src/test/scala/irobo/api/model/dao/UrlDaoTest.scala	/^        val url = Url($/;"	l
+urlDao	src/test/scala/irobo/api/model/dao/UrlDaoTest.scala	/^      val urlDao = new UrlDao(pool)$/;"	l
+urlDao	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^      val urlDao     = new UrlDao(pool)$/;"	l
+urlService	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^      val urlService = new UrlService(urlDao)$/;"	l
+urlValue	src/main/scala/irobo/api/service/UrlService.scala	/^		val urlValue = Url($/;"	l
+verifyToken	src/main/scala/irobo/api/service/AuthService.scala	/^	def verifyToken($/;"	m
+verifyTokenResponse	src/test/scala/irobo/api/service/AccountServiceTest.scala	/^        val verifyTokenResponse = VerifyTokenResponse ($/;"	l
+verifyTokenResponse	src/test/scala/irobo/api/service/AssetServiceTest.scala	/^        val verifyTokenResponse = VerifyTokenResponse ($/;"	l
+verifyTokenResponse	src/test/scala/irobo/api/service/CustomerServiceTest.scala	/^        val verifyTokenResponse = VerifyTokenResponse ($/;"	l
+verifyTokenResponse	src/test/scala/irobo/api/service/EvaluationServiceTest.scala	/^        val verifyTokenResponse = VerifyTokenResponse ($/;"	l
+verifyTokenResponse	src/test/scala/irobo/api/service/SectorServiceTest.scala	/^        val verifyTokenResponse = VerifyTokenResponse ($/;"	l
+wrapShortUrl	src/main/scala/irobo/api/service/UrlService.scala	/^  def wrapShortUrl(shortUrl: String) = $/;"	m
+yieldDao	src/main/scala/irobo/api/Server.scala	/^  val yieldDao      = new YieldDao(pool)$/;"	l
+yieldEndPoint	src/main/scala/irobo/api/Server.scala	/^  val yieldEndPoint        = new YieldEndPoint(yieldService, authService)$/;"	l
+yieldService	src/main/scala/irobo/api/Server.scala	/^  val yieldService        = new YieldService(yieldDao, kospiDao)$/;"	l
+yieldType	src/main/scala/irobo/api/endpoint/YieldEndPoint.scala	/^			val yieldType : Option[String] = doc.hcursor.get[String]("yield_type").toOption$/;"	l
