@@ -17,11 +17,7 @@ class UrlService(
 	urlDao          : UrlDao,
 	globalParamsDao : GlobalParamsDao
 )(implicit ec : ExecutionContext) extends Logger {
-	private[service] def parseFullUrl(fullUrl: String) = 
-		fullUrl
-      .replace("www.", "")
-      .replace("https://", "")
-      .replace("http://", "")
+	private[service] def parseFullUrl(fullUrl: String) = fullUrl.replace("https://", "").replace("http://", "")
 		
 	// gets the last bit of url which is the key to full url value
   private[service] def parseShortUrl(url: String): Future[Option[String]] = 
