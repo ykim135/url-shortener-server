@@ -64,14 +64,11 @@ class UrlService(
   private[service] def toBase10(str: Option[String]): Future[Option[Long]] = {
     str match {
       case Some(str) =>
-        globalParamsDao.getGlobalParams().map { globalParamsOpt =>
-          globalParamsOpt.map { globalParams =>
-            val digits = str.map { eachChar => globalParams.charset.indexOf(eachChar) }.reverse
-            digits.map { digit => digit * scala.math.pow (62, digits.indexOf(digit)) }.sum.toInt
-          }
-        }
-      case _ =>
-        Future.successful(None)
+    globalParamsDao.getGlobalParams().map { globalParamsOpt =>
+      globalParamsOpt.map { globalParams =>
+        val digits = str.map { eachChar => globalParams.charset.indexOf(eachChar) }.reverse
+        digits.map { digit => digit * scala.math.pow (62, digits.indexOf(digit)) }.sum.toInt
+      }
     }
   }
 

@@ -45,3 +45,7 @@ ga
 compile
 testOnly irobo.api.service.UrlServiceTest
 compile
+testOnly irobo.api.service.AlgorithmTest
+compile
+testOnly irobo.api.service.AlgorithmTest
+compile

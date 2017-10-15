@@ -72,7 +72,8 @@ object Server extends App with Logger {
   /** DAO Setups
    ******************************************************************/
   
-  val urlDao = new UrlDao(pool)
+  val urlDao          = new UrlDao(pool)
+  val globalParamsDao = new GlobalParamsDao(pool)
 
   /**
    * ********************************************************************************
@@ -80,7 +81,7 @@ object Server extends App with Logger {
    * ********************************************************************************
    */
 
-  val urlService = new UrlService(urlDao)
+  val urlService = new UrlService(urlDao, globalParamsDao)
 
   /**
    * ********************************************************************************
