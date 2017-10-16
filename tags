@@ -4,14 +4,19 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+Algorithm	src/main/scala/irobo/api/service/Algorithm.scala	/^class Algorithm() {$/;"	c
+AlgorithmTest	src/test/scala/irobo/api/service/AlgorithmTest.scala	/^object AlgorithmTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
 CORSHandler	src/main/scala/irobo/api/Server.scala	/^  val CORSHandler: Endpoint[Unit] = options(*) {$/;"	l
 DnsResolvingCluster	src/main/scala/irobo/api/service/HttpInvoker.scala	/^class DnsResolvingCluster(host: String, port: Int, dnsTtlMillis: Long = 5 * 60 * 1000) extends Cluster[SocketAddress] with Logger {$/;"	c
 DnsResolvingCluster	src/main/scala/irobo/api/service/HttpInvoker.scala	/^object DnsResolvingCluster extends Logger {$/;"	c
 DnsTtl	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  val DnsTtl = 1000 * 60 * 5$/;"	l
-EncodeShortUrl	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeShortUrl: Encoder[CompanyResponse] = new Encoder[CompanyResponse] {$/;"	l
+EncodeFullUrl	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeFullUrl: Encoder[FullUrl] = new Encoder[FullUrl] {$/;"	l
+EncodeShortUrl	src/main/scala/irobo/api/JsonEncoder.scala	/^  implicit val EncodeShortUrl: Encoder[ShortUrl] = new Encoder[ShortUrl] {$/;"	l
 Format	src/main/scala/irobo/api/Format.scala	/^object Format {$/;"	c
-FullUrl	src/main/scala/irobo/api/model/ShortUrl.scala	/^case class FullUrl (url : Option[String])$/;"	c
+FullUrl	src/main/scala/irobo/api/model/ShortUrl.scala	/^case class FullUrl ($/;"	c
 FutureConvert	src/main/scala/irobo/api/service/FutureConvert.scala	/^object FutureConvert {$/;"	c
+GlobalParams	src/main/scala/irobo/api/model/GlobalParams.scala	/^case class GlobalParams ($/;"	c
+GlobalParamsDao	src/main/scala/irobo/api/model/dao/GlobalParamsDao.scala	/^class GlobalParamsDao(connection: Connection)(implicit ec: ExecutionContext) extends RowDao[GlobalParams] with Logger {$/;"	c
 HostToResolve	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  class HostToResolve(val host: String, val port: Int, var current: Seq[SocketAddress], val outgoing: SpoolSource[Change[SocketAddress]])$/;"	c
 HttpInvoker	src/main/scala/irobo/api/service/HttpInvoker.scala	/^class HttpInvoker private ($/;"	c
 HttpInvoker	src/main/scala/irobo/api/service/HttpInvoker.scala	/^object HttpInvoker {$/;"	c
@@ -25,7 +30,7 @@ RichTFuture	src/main/scala/irobo/api/endpoint/Package.scala	/^  implicit class R
 RichTFuture	src/main/scala/irobo/api/service/FutureConvert.scala	/^  implicit class RichTFuture[A](val f: TFuture[A]) extends AnyVal {$/;"	c
 RowDao	src/main/scala/irobo/api/model/dao/RowDao.scala	/^trait RowDao[T] extends Logger {$/;"	t
 Server	src/main/scala/irobo/api/Server.scala	/^object Server extends App with Logger {$/;"	c
-ShortUrl	src/main/scala/irobo/api/model/ShortUrl.scala	/^case class ShortUrl (url : Option[String])$/;"	c
+ShortUrl	src/main/scala/irobo/api/model/ShortUrl.scala	/^case class ShortUrl ($/;"	c
 TestDatabase	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^object TestDatabase {$/;"	c
 Url	src/main/scala/irobo/api/model/Url.scala	/^case class Url ($/;"	c
 UrlDao	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^class UrlDao(connection: Connection)(implicit ec: ExecutionContext) extends RowDao[Url] with Logger {$/;"	c
@@ -33,16 +38,18 @@ UrlDaoTest	src/test/scala/irobo/api/model/dao/UrlDaoTest.scala	/^object UrlDaoTe
 UrlEndPoint	src/main/scala/irobo/api/endpoint/UrlEndPoint.scala	/^class UrlEndPoint(urlService: UrlService)(implicit executionContext: ExecutionContext) {$/;"	c
 UrlService	src/main/scala/irobo/api/service/UrlService.scala	/^class UrlService(urlDao: UrlDao)(implicit ec : ExecutionContext) extends Logger {$/;"	c
 UrlServiceTest	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^object UrlServiceTest extends TestSuite with Matchers with MockitoSugar {$/;"	c
+_pool	src/main/scala/irobo/api/model/dao/GlobalParamsDao.scala	/^  val _pool = connection$/;"	l
 _pool	src/main/scala/irobo/api/model/dao/RowDao.scala	/^  def _pool : Connection$/;"	m
 _pool	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^  val _pool = connection$/;"	l
 addResolver	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  def addResolver(host: String, port: Int, outgoing: SpoolSource[Change[SocketAddress]]): Seq[SocketAddress] = {$/;"	m
 added	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val added = updated.filter(!h.current.contains(_))$/;"	l
+algorithm	src/test/scala/irobo/api/service/AlgorithmTest.scala	/^      val algorithm = new Algorithm()$/;"	l
 apply	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  def apply($/;"	m
 asScala	src/main/scala/irobo/api/endpoint/Package.scala	/^    def asScala(implicit e: ExecutionContext): SFuture[A] = {$/;"	m
 asScala	src/main/scala/irobo/api/service/FutureConvert.scala	/^    def asScala(implicit e: ExecutionContext): SFuture[A] = {$/;"	m
 asTwitter	src/main/scala/irobo/api/endpoint/Package.scala	/^    def asTwitter(implicit e: ExecutionContext): TFuture[A] = {$/;"	m
 asTwitter	src/main/scala/irobo/api/service/FutureConvert.scala	/^    def asTwitter(implicit e: ExecutionContext): TFuture[A] = {$/;"	m
-charset	src/main/scala/irobo/api/service/UrlService.scala	/^	val charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"$/;"	l
+charset	src/main/scala/irobo/api/service/UrlService.scala	/^	private val charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"$/;"	l
 client	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  private val client   = ClientBuilder()$/;"	l
 conf	src/main/scala/irobo/api/Server.scala	/^    val conf        = new Configuration($/;"	l
 config	src/main/scala/irobo/api/Server.scala	/^  val config = ConfigFactory.load()$/;"	l
@@ -51,6 +58,7 @@ criticalLogger	src/main/scala/irobo/api/Logger.scala	/^  final val criticalLogge
 current	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val current = DnsResolvingCluster.addResolver(host, port, outgoing)$/;"	l
 current	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val current = resolve(host, port)$/;"	l
 database	src/main/scala/irobo/api/Server.scala	/^    val database    = Option(mySqlConfig.getString("database"))$/;"	l
+dayOfFirstDayOfMonth	src/main/scala/irobo/api/service/Algorithm.scala	/^		val dayOfFirstDayOfMonth = firstDayOfMonth.getDayOfWeek() \/\/ 2017-01-01 is Monday, Tuesday, etc.$/;"	l
 dbConfig	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^    val dbConfig = new Configuration($/;"	l
 dbHost	src/main/scala/irobo/api/Server.scala	/^    val dbHost      = mySqlConfig.getString("host")$/;"	l
 dbPassword	src/main/scala/irobo/api/Server.scala	/^    val dbPassword  = Option(mySqlConfig.getString("password")).filterNot(_.isEmpty)$/;"	l
@@ -65,23 +73,30 @@ f	src/main/scala/irobo/api/service/HttpInvoker.scala	/^      val f = client(requ
 f	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val f = client(request).asScala$/;"	l
 factory	src/main/scala/irobo/api/Server.scala	/^    val factory    = new MySQLConnectionFactory(conf)$/;"	l
 factory	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^    val factory = new MySQLConnectionFactory(dbConfig)$/;"	l
+feb	src/test/scala/irobo/api/service/AlgorithmTest.scala	/^        val feb = algorithm.getFirstMondayDate(2)$/;"	l
+firstDayOfMonth	src/main/scala/irobo/api/service/Algorithm.scala	/^		val firstDayOfMonth = new LocalDate(2017, month, 1) \/\/ 2017-01-01$/;"	l
 fullUrl	src/main/scala/irobo/api/endpoint/UrlEndPoint.scala	/^			val fullUrl: Option[String] = doc.hcursor.get[String]("full_url").toOption$/;"	l
-fullUrl	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^        val fullUrl = "www.google.com"$/;"	l
+fullUrl	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^        val fullUrl = "https:\/\/google.com"$/;"	l
 fullUrlHash	src/main/scala/irobo/api/service/UrlService.scala	/^		val fullUrlHash   = getFullUrlHash(prettyFullUrl)$/;"	l
 get	src/main/scala/irobo/api/model/dao/RowDao.scala	/^  def get(sql: String)(implicit ec: ExecutionContext): Future[Option[T]] = {$/;"	m
 getCriticalLogger	src/main/scala/irobo/api/Logger.scala	/^  def getCriticalLogger = org.slf4j.LoggerFactory.getLogger("critical")$/;"	m
-getFullUrl	src/main/scala/irobo/api/endpoint/UrlEndPoint.scala	/^  def getFullUrl(): Endpoint[String] = {$/;"	m
+getFirstMondayDate	src/main/scala/irobo/api/service/Algorithm.scala	/^	def getFirstMondayDate(month : Int): LocalDate = {$/;"	m
+getFullUrl	src/main/scala/irobo/api/endpoint/UrlEndPoint.scala	/^  def getFullUrl(): Endpoint[FullUrl] = {$/;"	m
 getFullUrl	src/main/scala/irobo/api/service/UrlService.scala	/^  def getFullUrl(shortUrl: String): Future[Option[String]] = {$/;"	m
 getFullUrlHash	src/main/scala/irobo/api/service/UrlService.scala	/^	private[service] def getFullUrlHash(fullUrl: String): String = $/;"	m
+getInstance	src/main/scala/irobo/api/model/dao/GlobalParamsDao.scala	/^  def getInstance(row: RowData): Url = {$/;"	m
 getInstance	src/main/scala/irobo/api/model/dao/RowDao.scala	/^  def getInstance(row: RowData): T $/;"	m
 getInstance	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^  def getInstance(row: RowData): Url = {$/;"	m
 getLogger	src/main/scala/irobo/api/Logger.scala	/^  def getLogger(clazz: Class[_]) = LoggerFactory.getLogger(clazz)$/;"	m
 getShortUrl	src/main/scala/irobo/api/endpoint/UrlEndPoint.scala	/^  def getShortUrl(): Endpoint[ShortUrl] = {$/;"	m
 getShortUrl	src/main/scala/irobo/api/service/UrlService.scala	/^	def getShortUrl(fullUrl: String): Future[Option[String]] = {$/;"	m
+getUrl	src/main/scala/irobo/api/model/dao/GlobalParamsDao.scala	/^  def getUrl(fullUrlHash: String) : Future[Option[Url]] = {$/;"	m
 getUrl	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^  def getUrl(fullUrlHash: String) : Future[Option[Url]] = {$/;"	m
+getUrlById	src/main/scala/irobo/api/model/dao/GlobalParamsDao.scala	/^  def getUrlById(id: Long) : Future[Option[Url]] = {$/;"	m
 getUrlById	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^  def getUrlById(id: Long) : Future[Option[Url]] = {$/;"	m
 hosts	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val hosts = InetAddress.getAllByName(host)$/;"	l
-id	src/main/scala/irobo/api/service/UrlService.scala	/^    val id = toBase10(shortUrl) $/;"	l
+id	src/main/scala/irobo/api/service/UrlService.scala	/^    val id = toBase10(parseShortUrl(shortUrl))$/;"	l
+input	src/main/scala/irobo/api/model/dao/GlobalParamsDao.scala	/^    val input = Array($/;"	l
 input	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^    val input = Array($/;"	l
 insert	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def insert() = {$/;"	m
 insertAccount	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def insertAccount() = {$/;"	m
@@ -95,6 +110,7 @@ insertFundIO	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def inser
 insertFundProduct	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def insertFundProduct() = {$/;"	m
 insertPB	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def insertPB() = {$/;"	m
 insertStockType	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def insertStockType() = pool.sendQuery("""INSERT INTO stock_type (stock_type_id, `desc`) VALUES (1, "주식"), (2, "채권")""")$/;"	m
+insertUrl	src/main/scala/irobo/api/model/dao/GlobalParamsDao.scala	/^  def insertUrl(url: Url): Future[Long] = {$/;"	m
 insertUrl	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^  def insertUrl(url: Url): Future[Long] = {$/;"	m
 insertUrls	src/test/scala/irobo/api/model/dao/UrlDaoTest.scala	/^      def insertUrls() = {$/;"	m
 irobo.api	src/main/scala/irobo/api/Format.scala	/^package irobo.api$/;"	p
@@ -105,20 +121,25 @@ irobo.api	src/main/scala/irobo/api/Server.scala	/^package irobo.api$/;"	p
 irobo.api	src/main/scala/irobo/api/endpoint/Package.scala	/^package irobo.api$/;"	p
 irobo.api.dao	src/test/scala/irobo/api/model/dao/UrlDaoTest.scala	/^package irobo.api.dao$/;"	p
 irobo.api.endpoint	src/main/scala/irobo/api/endpoint/UrlEndPoint.scala	/^package irobo.api.endpoint$/;"	p
+irobo.api.model	src/main/scala/irobo/api/model/GlobalParams.scala	/^package irobo.api.model$/;"	p
 irobo.api.model	src/main/scala/irobo/api/model/ShortUrl.scala	/^package irobo.api.model$/;"	p
 irobo.api.model	src/main/scala/irobo/api/model/Url.scala	/^package irobo.api.model$/;"	p
+irobo.api.model.dao	src/main/scala/irobo/api/model/dao/GlobalParamsDao.scala	/^package irobo.api.model.dao$/;"	p
 irobo.api.model.dao	src/main/scala/irobo/api/model/dao/RowDao.scala	/^package irobo.api.model.dao$/;"	p
 irobo.api.model.dao	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^package irobo.api.model.dao$/;"	p
 irobo.api.model.dao	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^package irobo.api.model.dao$/;"	p
+irobo.api.service	src/main/scala/irobo/api/service/Algorithm.scala	/^package irobo.api.service$/;"	p
 irobo.api.service	src/main/scala/irobo/api/service/FutureConvert.scala	/^package irobo.api.service$/;"	p
 irobo.api.service	src/main/scala/irobo/api/service/HttpInvoker.scala	/^package irobo.api.service$/;"	p
 irobo.api.service	src/main/scala/irobo/api/service/UrlService.scala	/^package irobo.api.service$/;"	p
+irobo.api.service	src/test/scala/irobo/api/service/AlgorithmTest.scala	/^package irobo.api.service$/;"	p
 irobo.api.service	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^package irobo.api.service$/;"	p
-key	src/main/scala/irobo/api/endpoint/UrlEndPoint.scala	/^            val key = urlService.parseShortUrl(shortUrl)$/;"	l
+jan	src/test/scala/irobo/api/service/AlgorithmTest.scala	/^        val jan = algorithm.getFirstMondayDate(1)$/;"	l
 list	src/main/scala/irobo/api/model/dao/RowDao.scala	/^  def list(sql: String)(implicit ec: ExecutionContext): Future[Seq[T]] = {$/;"	m
 logger	src/main/scala/irobo/api/Logger.scala	/^  final val logger = LoggerFactory.getLogger(getClass)$/;"	l
 logger	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  private val logger   = Logger.getLogger(this.getClass)$/;"	l
 loop	src/main/scala/irobo/api/service/UrlService.scala	/^    def loop($/;"	m
+mondayDate	src/main/scala/irobo/api/service/Algorithm.scala	/^			val mondayDate = weekFromFirstDayOfMonth.withDayOfWeek(DateTimeConstants.MONDAY)$/;"	l
 monixScheduler	src/main/scala/irobo/api/Server.scala	/^  val monixScheduler              = $/;"	l
 monixScheduler	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^      val monixScheduler = monix.execution.Scheduler.Implicits.global$/;"	l
 mySqlConfig	src/main/scala/irobo/api/Server.scala	/^    val mySqlConfig = config.getConfig("mySqlConfig")$/;"	l
@@ -139,7 +160,8 @@ p	src/main/scala/irobo/api/endpoint/Package.scala	/^      val p: SPromise[A] = S
 p	src/main/scala/irobo/api/endpoint/Package.scala	/^      val p: TPromise[A] = new TPromise[A]$/;"	l
 p	src/main/scala/irobo/api/service/FutureConvert.scala	/^      val p: SPromise[A] = SPromise()$/;"	l
 p	src/main/scala/irobo/api/service/FutureConvert.scala	/^      val p: TPromise[A] = new TPromise[A]$/;"	l
-parseShortUrl	src/main/scala/irobo/api/service/UrlService.scala	/^  def parseShortUrl(url: String): String = $/;"	m
+parseShortUrl	src/main/scala/irobo/api/service/UrlService.scala	/^  private[service] def parseShortUrl(url: String): String = url.split("my.kr\/").last$/;"	m
+pattern	src/main/scala/irobo/api/endpoint/UrlEndPoint.scala	/^			val pattern: Regex = """^((https?|ftp|smtp):\\\/\\\/)?(www.)?[a-z0-9]+\\.[a-z]+(\\\/[a-zA-Z0-9#]+\\\/?)*$""".r$/;"	l
 pool	src/main/scala/irobo/api/Server.scala	/^  val pool = {$/;"	l
 pool	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  val pool = {$/;"	l
 pool	src/test/scala/irobo/api/model/dao/UrlDaoTest.scala	/^      val pool = TestDatabase.pool$/;"	l
@@ -147,7 +169,7 @@ pool	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^      implicit val 
 poolConfig	src/main/scala/irobo/api/Server.scala	/^    val poolConfig = PoolConfiguration($/;"	l
 port	src/main/scala/irobo/api/Server.scala	/^  val port   = config.getInt("port")$/;"	l
 port	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^    val port              = config.getInt("port")$/;"	l
-prettifyFullUrl	src/main/scala/irobo/api/service/UrlService.scala	/^	def prettifyFullUrl(fullUrl: String) = $/;"	m
+prettifyFullUrl	src/main/scala/irobo/api/service/UrlService.scala	/^	private[service] def prettifyFullUrl(fullUrl: String) = $/;"	m
 prettyFullUrl	src/main/scala/irobo/api/service/UrlService.scala	/^		val prettyFullUrl = prettifyFullUrl(fullUrl)$/;"	l
 protocol	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  private val protocol = if(port == 443) "https" else "http"$/;"	l
 queryParamsStr	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val queryParamsStr     = s"""${queryParams.map(v => s"${v._1}=${URLEncoder.encode(v._2, "UTF-8")}").mkString("&")}"""$/;"	l
@@ -166,6 +188,8 @@ shortUrl	src/main/scala/irobo/api/endpoint/UrlEndPoint.scala	/^			val shortUrl: 
 shortUrl	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^        val shortUrl = "a"$/;"	l
 shutDownHook	src/main/scala/irobo/api/Server.scala	/^  val shutDownHook = new Runnable {$/;"	l
 snap	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  def snap: (Seq[SocketAddress], util.Future[Spool[Change[SocketAddress]]]) = {$/;"	m
+sql	src/main/scala/irobo/api/model/dao/GlobalParamsDao.scala	/^        val sql = $/;"	l
+sql	src/main/scala/irobo/api/model/dao/GlobalParamsDao.scala	/^    val sql = $/;"	l
 sql	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^        val sql = $/;"	l
 sql	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^    val sql = $/;"	l
 sql	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^    val sql = $/;"	l
@@ -176,15 +200,17 @@ tables	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^    val tables = 
 tables	src/test/scala/irobo/api/model/dao/UrlDaoTest.scala	/^        val tables = Seq("urls")$/;"	l
 tables	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^        val tables = Seq("urls")$/;"	l
 tests	src/test/scala/irobo/api/model/dao/UrlDaoTest.scala	/^  val tests = this {$/;"	l
+tests	src/test/scala/irobo/api/service/AlgorithmTest.scala	/^  val tests = this {$/;"	l
 tests	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^  val tests = this {$/;"	l
-toBase10	src/main/scala/irobo/api/service/UrlService.scala	/^  def toBase10(str: String): Int = {$/;"	m
-toBase62	src/main/scala/irobo/api/service/UrlService.scala	/^  def toBase62(num: Option[Long]): Option[String] = {$/;"	m
+toBase10	src/main/scala/irobo/api/service/UrlService.scala	/^  private[service] def toBase10(str: String): Int = {$/;"	m
+toBase62	src/main/scala/irobo/api/service/UrlService.scala	/^  private[service] def toBase62(num: Option[Long]): Option[String] = {$/;"	m
 transactionExecutionContext	src/main/scala/irobo/api/Server.scala	/^  val transactionExecutionContext = $/;"	l
 truncate	src/test/scala/irobo/api/model/dao/TestDatabase.scala	/^  def truncate() = {$/;"	m
 truncate	src/test/scala/irobo/api/model/dao/UrlDaoTest.scala	/^      def truncate() = {$/;"	m
 truncate	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^      def truncate() = {$/;"	m
 tryStringToInt	src/main/scala/irobo/api/Format.scala	/^  def tryStringToInt(a: String): Option[Int] =$/;"	m
 update	src/main/scala/irobo/api/service/HttpInvoker.scala	/^  private def update(h: HostToResolve) {$/;"	m
+updateShortUrl	src/main/scala/irobo/api/model/dao/GlobalParamsDao.scala	/^  def updateShortUrl($/;"	m
 updateShortUrl	src/main/scala/irobo/api/model/dao/UrlDao.scala	/^  def updateShortUrl($/;"	m
 updated	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val updated = resolve(h.host, h.port)$/;"	l
 uriWithQueryParams	src/main/scala/irobo/api/service/HttpInvoker.scala	/^    val uriWithQueryParams = s"""$uri?$queryParamsStr"""$/;"	l
@@ -197,4 +223,6 @@ urlEndPoint	src/main/scala/irobo/api/Server.scala	/^  val urlEndPoint = new UrlE
 urlService	src/main/scala/irobo/api/Server.scala	/^  val urlService = new UrlService(urlDao)$/;"	l
 urlService	src/test/scala/irobo/api/service/UrlServiceTest.scala	/^      val urlService = new UrlService(urlDao)$/;"	l
 urlValue	src/main/scala/irobo/api/service/UrlService.scala	/^		val urlValue = Url($/;"	l
-wrapShortUrl	src/main/scala/irobo/api/service/UrlService.scala	/^  def wrapShortUrl(shortUrl: String) = $/;"	m
+validatedUrl	src/main/scala/irobo/api/endpoint/UrlEndPoint.scala	/^			val validatedUrl = fullUrl.flatMap { url => pattern.findFirstIn(url) }$/;"	l
+weekFromFirstDayOfMonth	src/main/scala/irobo/api/service/Algorithm.scala	/^			val weekFromFirstDayOfMonth = firstDayOfMonth.plusDays(7) $/;"	l
+wrapShortUrl	src/main/scala/irobo/api/service/UrlService.scala	/^  private[service] def wrapShortUrl(shortUrl: String) = s"my.kr\/$shortUrl"$/;"	m

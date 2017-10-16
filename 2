@@ -17,7 +17,11 @@ class UrlService(
 	urlDao          : UrlDao,
 	globalParamsDao : GlobalParamsDao
 )(implicit ec : ExecutionContext) extends Logger {
-	private[service] def parseFullUrl(fullUrl: String) = fullUrl.replace("https://", "").replace("http://", "")
+	private[service] def parseFullUrl(fullUrl: String) = 
+		fullUrl
+      .replace("www.", "")
+      .replace("https://", "")
+      .replace("http://", "")
 		
 	// gets the last bit of url which is the key to full url value
   private[service] def parseShortUrl(url: String): Future[Option[String]] = 
@@ -60,14 +64,11 @@ class UrlService(
   private[service] def toBase10(str: Option[String]): Future[Option[Long]] = {
     str match {
       case Some(str) =>
-        globalParamsDao.getGlobalParams().map { globalParamsOpt =>
-          globalParamsOpt.map { globalParams =>
-            val digits = str.map { eachChar => globalParams.charset.indexOf(eachChar) }.reverse
-            digits.map { digit => digit * scala.math.pow (62, digits.indexOf(digit)) }.sum.toInt
-          }
-        }
-      case _ =>
-        Future.successful(None)
+    globalParamsDao.getGlobalParams().map { globalParamsOpt =>
+      globalParamsOpt.map { globalParams =>
+        val digits = str.map { eachChar => globalParams.charset.indexOf(eachChar) }.reverse
+        digits.map { digit => digit * scala.math.pow (62, digits.indexOf(digit)) }.sum.toInt
+      }
     }
   }
 
