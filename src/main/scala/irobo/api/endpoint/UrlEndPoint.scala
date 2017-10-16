@@ -67,7 +67,11 @@ class UrlEndPoint(urlService: UrlService)(implicit executionContext: ExecutionCo
         shortUrl match {
           case Some(shortUrl) =>
             urlService.getFullUrl(shortUrl).map { fullUrl =>
-              Ok(FullUrl("2000", "Success", fullUrl)).withHeader("Access-Control-Allow-Origin" -> "*")
+              val status =  
+                if (fullUrl.isDefined) FullUrl("2000", "Success", fullUrl)
+                else FullUrl("4002", "No matching full url", fullUrl)
+
+              Ok(status).withHeader("Access-Control-Allow-Origin" -> "*")
             }
           case None =>
             Future.successful(Ok(FullUrl("4001", "Cannot interpret shortened url", None)).withHeader("Access-Control-Allow-Origin" -> "*"))

@@ -32,13 +32,16 @@ class UrlDao(connection: Connection)(implicit ec: ExecutionContext) extends RowD
     get(sql)
   }
 
-  def getUrlById(id: Long) : Future[Option[Url]] = {
-    val sql = 
-      s"""
-      SELECT * FROM urls WHERE id = "$id"
-      """
+  def getUrlById(id: Option[Long]) : Future[Option[Url]] = {
+    if (id.isDefined) {
+      val sql = 
+        s"""
+        SELECT * FROM urls WHERE id = "${id.get}"
+        """
 
-    get(sql)
+        get(sql)
+    }
+    else Future.successful(None)
   }
 
   def insertUrl(url: Url): Future[Long] = {
