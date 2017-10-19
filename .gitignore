@@ -3,3 +3,6 @@ target/
 *.xsl
 tags
 project/target/resolution-cache/
+json/
+*.sh
+project/target/streams/
