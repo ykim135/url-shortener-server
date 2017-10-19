@@ -2,3 +2,4 @@ target/
 *.un~
 *.xsl
 tags
+project/target/resolution-cache/
