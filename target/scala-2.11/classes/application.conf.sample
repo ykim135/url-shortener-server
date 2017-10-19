@@ -1,7 +1,0 @@
-port              = 8080
-mySqlConfig       = {
-  username = "root"
-  host     = "localhost"
-  password = ""
-  database = "irobo"
-}
