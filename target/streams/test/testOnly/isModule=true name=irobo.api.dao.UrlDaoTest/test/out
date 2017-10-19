@@ -1,8 +1,0 @@
-[0m[[0minfo[0m] [0m--------------------Starting Suite irobo.api.dao.UrlDaoTest--------------------[0m
-[0m[[0minfo[0m] [0mirobo.api.dao.UrlDaoTest.Url Dao Test.get url		[31m[0m
-[0m[[0minfo[0m] [0m       		[31morg.scalatest.exceptions.TestFailedException: Some(Url(Some(1),abcdfd,Some(adfasfsd),abcdef)) did not equal List()[0m[0m
-[0m[[0minfo[0m] [0mirobo.api.dao.UrlDaoTest.Url Dao Test.insert url		[32mSuccess[0m[0m
-[0m[[0minfo[0m] [0mirobo.api.dao.UrlDaoTest.Url Dao Test.update short url		[31m[0m
-[0m[[0minfo[0m] [0m                		[31morg.scalatest.exceptions.TestFailedException: 1 did not equal None[0m[0m
-[0m[[0minfo[0m] [0mirobo.api.dao.UrlDaoTest.Url Dao Test		[32mSuccess[0m[0m
-[0m[[0minfo[0m] [0mirobo.api.dao.UrlDaoTest		[32mSuccess[0m[0m
